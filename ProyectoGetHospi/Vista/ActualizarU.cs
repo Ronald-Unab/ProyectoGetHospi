@@ -48,5 +48,10 @@ namespace ProyectoGetHospi.Vista
             MessageBox.Show("Se han guardado los cambios");
             usuariosBindingSource.DataSource = cUsuarios.Listado();
         }
+
+        private void claveLabel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
