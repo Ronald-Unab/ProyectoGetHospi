@@ -19,24 +19,37 @@ namespace ProyectoGetHospi.Vista
         {
             InitializeComponent();
         }
-
-   
-
+        public void cargardatos() 
+        {
+            archivoBindingSource.DataSource = mArchivo.Listado();
+        }
+        MArchivos mArchivo = new MArchivos();
+        CArchivos cArchivo = new CArchivos();
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            btnSelecionar.Enabled = true;
-            btnGuardarMed.Enabled = false;
-            médicoBindingSource.EndEdit();
-            Médico M = new Médico();
-            M = (Médico)médicoBindingSource.Current;
-            cMedico.Actualizar(M);
-            MessageBox.Show("Se han actualizado los datos del medico");
+            btnSeleccionar.Enabled = true;
+            btnGuardar.Enabled = false;
+            archivoBindingSource.EndEdit();
+            Archivo archivo = new Archivo();
+            archivo = (Archivo)archivoBindingSource.Current;
+            cArchivo.Actualizar(archivo);
+            MessageBox.Show("Los datos del archivo se han actualizado");
+            cargardatos();
             this.Close();
         }
 
         private void btnSeleccionar_Click(object sender, EventArgs e)
         {
+            btnSeleccionar.Enabled = false;
+            groupBox1.Enabled = true;
+            btnGuardar.Enabled = true;
+        }
 
+        private void ActualizarA_Load(object sender, EventArgs e)
+        {
+            cargardatos();
+            groupBox1.Enabled = false;
+            btnGuardar.Enabled = false;
         }
     }
 }
