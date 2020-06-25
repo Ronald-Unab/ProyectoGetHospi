@@ -117,13 +117,25 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnRegresar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAAZ0AAAGdASjHhu0AAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwa
+        AAABOElEQVRIS7XSr0sEQRTA8QUVbJruP7CLoKzgD7DYDYLJbhD/BIviGeSiRWxikatitGgQi0EwiM0g
+        CqIm0fX77mb07fg4bufmHnyWmXlv3tuFzYqi6CvzMCXzMKX/B1k2jHWMh7kY5U27+Slk09S5WH+LcvMP
+        zOnCWO1Hufk75sPCWBK6+RtmrcJYEseQlX/7hwj3OMMWSj+HxB38gBQ+sYlBP2ACL5DdIxaRVzSNVZzA
+        D9ptDXBT9JBLjPhPrIpYwTe+kOtEyiH7rs9BmNBDDnWuCmLB9bixkjLkGhthrlvEGGTxahb0ilhyA87N
+        gl4QA7hwA+pmUSxiFEeu+RNqZqFGTGEbOx3U0cQz5JL8osut+2HDEHHlLnXrFvnvfd3MQsxgD40OJL+G
+        SQyV7utNP5iHKZmH6RTZD2QkJob1exQ/AAAAAElFTkSuQmCC
+</value>
+  </data>
   <metadata name="especialidadesBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
   <metadata name="bindingNavigator1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>226, 17</value>
   </metadata>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="bindingNavigatorAddNewItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
@@ -188,7 +200,4 @@
         8l/FYwIYQ4UGBWBgAAC+0b+zuQxOnAAAAABJRU5ErkJggg==
 </value>
   </data>
-  <metadata name="especialidadesBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
 </root>

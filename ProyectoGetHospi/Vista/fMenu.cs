@@ -20,50 +20,57 @@ namespace ProyectoGetHospi.Vista
         private void btnMedicosM(object sender, EventArgs e)
         {
             fMedico fm = new fMedico();
+            fm.MdiParent = this;
             fm.Show();
-            Hide();
+            //Hide();
         }
 
         private void btnUsuarios(object sender, EventArgs e)
         {
             fUsuarios fu = new fUsuarios();
+            fu.MdiParent = this;
             fu.Show();
-            Hide();  
+            //Hide();  
         }
 
         private void btnPacientes_Click(object sender, EventArgs e)
         {
             fPacientes fp = new fPacientes();
+            fp.MdiParent = this;
             fp.Show();
-            Hide();
+            //Hide();
         }
 
         private void btnArchivos_Click(object sender, EventArgs e)
         {
             fArchivos fa = new fArchivos();
+            fa.MdiParent = this;
             fa.Show();
-            Hide();
+            //Hide();
         }
 
         private void btnConsulta_Click(object sender, EventArgs e)
         {
             fConsulta fc = new fConsulta();
+            fc.MdiParent = this;
             fc.Show();
-            Hide();
+            //Hide();
         }
 
         private void btnDiagnostico_Click(object sender, EventArgs e)
         {
             fDiagnosticos fd = new fDiagnosticos();
+            fd.MdiParent = this;
             fd.Show();
-            Hide();
+            //Hide();
         }
 
         private void btnEspecialidades_Click(object sender, EventArgs e)
         {
             fEspecialidades fe = new fEspecialidades();
+            fe.MdiParent = this;
             fe.Show();
-            Hide();
+            //Hide();
         }
     }
 }

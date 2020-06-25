@@ -77,5 +77,10 @@ namespace ProyectoGetHospi
             ActualizarMed AM = new ActualizarMed();
             AM.Show();
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

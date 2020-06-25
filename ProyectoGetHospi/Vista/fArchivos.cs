@@ -45,5 +45,20 @@ namespace ProyectoGetHospi.Vista
             RegistrarA RA = new RegistrarA();
             RA.Show();
         }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

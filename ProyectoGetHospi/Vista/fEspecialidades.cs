@@ -29,5 +29,10 @@ namespace ProyectoGetHospi.Vista
         {
             especialidadesBindingSource.DataSource = mEspecialidades.Listado();
         }
+
+        private void bindingNavigator1_RefreshItems(object sender, EventArgs e)
+        {
+
+        }
     }
 }

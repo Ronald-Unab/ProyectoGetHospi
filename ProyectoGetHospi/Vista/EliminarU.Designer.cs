@@ -65,7 +65,7 @@
             // 
             // usuariosBindingSource
             // 
-            this.usuariosBindingSource.DataSource = typeof(ProyectoGetHospi.Entidades.Usuarios);
+            //this.usuariosBindingSource.DataSource = typeof(ProyectoGetHospi.Entidades.Usuarios);
             // 
             // btnEliminar
             // 

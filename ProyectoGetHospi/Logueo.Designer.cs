@@ -48,7 +48,7 @@
             // 
             this.lblUsuario.AutoSize = true;
             this.lblUsuario.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsuario.Location = new System.Drawing.Point(108, 244);
+            this.lblUsuario.Location = new System.Drawing.Point(124, 256);
             this.lblUsuario.Name = "lblUsuario";
             this.lblUsuario.Size = new System.Drawing.Size(66, 21);
             this.lblUsuario.TabIndex = 0;
@@ -59,9 +59,9 @@
             this.txtUsuario.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtUsuario.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.usuariosBindingSource, "Usuario", true));
             this.txtUsuario.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsuario.Location = new System.Drawing.Point(42, 268);
+            this.txtUsuario.Location = new System.Drawing.Point(31, 280);
             this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(199, 20);
+            this.txtUsuario.Size = new System.Drawing.Size(261, 20);
             this.txtUsuario.TabIndex = 1;
             // 
             // txtContra
@@ -69,17 +69,17 @@
             this.txtContra.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtContra.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.usuariosBindingSource1, "Clave", true));
             this.txtContra.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtContra.Location = new System.Drawing.Point(42, 325);
+            this.txtContra.Location = new System.Drawing.Point(31, 337);
             this.txtContra.Name = "txtContra";
             this.txtContra.PasswordChar = '*';
-            this.txtContra.Size = new System.Drawing.Size(199, 20);
+            this.txtContra.Size = new System.Drawing.Size(261, 20);
             this.txtContra.TabIndex = 2;
             // 
             // lblContrasena
             // 
             this.lblContrasena.AutoSize = true;
             this.lblContrasena.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblContrasena.Location = new System.Drawing.Point(87, 301);
+            this.lblContrasena.Location = new System.Drawing.Point(98, 313);
             this.lblContrasena.Name = "lblContrasena";
             this.lblContrasena.Size = new System.Drawing.Size(103, 21);
             this.lblContrasena.TabIndex = 3;
@@ -92,9 +92,9 @@
             this.btnEntrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEntrar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEntrar.ForeColor = System.Drawing.Color.White;
-            this.btnEntrar.Location = new System.Drawing.Point(29, 382);
+            this.btnEntrar.Location = new System.Drawing.Point(48, 388);
             this.btnEntrar.Name = "btnEntrar";
-            this.btnEntrar.Size = new System.Drawing.Size(228, 30);
+            this.btnEntrar.Size = new System.Drawing.Size(225, 30);
             this.btnEntrar.TabIndex = 4;
             this.btnEntrar.Text = "Entrar";
             this.btnEntrar.UseVisualStyleBackColor = false;
@@ -103,9 +103,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(62, 54);
+            this.pictureBox1.Location = new System.Drawing.Point(77, 54);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(152, 162);
+            this.pictureBox1.Size = new System.Drawing.Size(160, 185);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
@@ -114,7 +114,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(77, 21);
+            this.label1.Location = new System.Drawing.Point(91, 21);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(122, 30);
             this.label1.TabIndex = 6;
@@ -126,7 +126,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(231)))), ((int)(((byte)(159)))));
-            this.ClientSize = new System.Drawing.Size(283, 485);
+            this.ClientSize = new System.Drawing.Size(327, 507);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnEntrar);
@@ -136,6 +136,7 @@
             this.Controls.Add(this.lblUsuario);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "fLogin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             ((System.ComponentModel.ISupportInitialize)(this.usuariosBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.usuariosBindingSource1)).EndInit();
