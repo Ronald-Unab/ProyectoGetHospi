@@ -29,21 +29,13 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EliminarA));
             this.archivoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.archivoDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnEliminar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.archivoBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.archivoDataGridView)).BeginInit();
             this.SuspendLayout();
-            // 
-            // archivoBindingSource
-            // 
-            this.archivoBindingSource.DataSource = typeof(ProyectoGetHospi.Entidades.Archivo);
             // 
             // archivoDataGridView
             // 
@@ -51,72 +43,43 @@
             this.archivoDataGridView.AllowUserToDeleteRows = false;
             this.archivoDataGridView.AutoGenerateColumns = false;
             this.archivoDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.archivoDataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(249)))), ((int)(((byte)(231)))));
+            this.archivoDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.archivoDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.archivoDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5});
             this.archivoDataGridView.DataSource = this.archivoBindingSource;
-            this.archivoDataGridView.Location = new System.Drawing.Point(12, 66);
+            this.archivoDataGridView.Location = new System.Drawing.Point(36, 66);
             this.archivoDataGridView.Name = "archivoDataGridView";
             this.archivoDataGridView.ReadOnly = true;
-            this.archivoDataGridView.Size = new System.Drawing.Size(663, 220);
+            this.archivoDataGridView.Size = new System.Drawing.Size(580, 207);
             this.archivoDataGridView.TabIndex = 1;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "IdArchivo";
-            this.dataGridViewTextBoxColumn1.HeaderText = "IdArchivo";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "Peso";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Peso";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "PresionArterial";
-            this.dataGridViewTextBoxColumn3.HeaderText = "PresionArterial";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "Temperatura";
-            this.dataGridViewTextBoxColumn4.HeaderText = "Temperatura";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "IdPaciente";
-            this.dataGridViewTextBoxColumn5.HeaderText = "IdPaciente";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.ReadOnly = true;
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Location = new System.Drawing.Point(12, 37);
+            this.btnEliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(208)))), ((int)(((byte)(63)))));
+            this.btnEliminar.FlatAppearance.BorderSize = 0;
+            this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEliminar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminar.Image = ((System.Drawing.Image)(resources.GetObject("btnEliminar.Image")));
+            this.btnEliminar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEliminar.Location = new System.Drawing.Point(459, 288);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(118, 23);
+            this.btnEliminar.Size = new System.Drawing.Size(157, 29);
             this.btnEliminar.TabIndex = 2;
             this.btnEliminar.Text = "Eliminar Seleccion";
-            this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnEliminar.UseVisualStyleBackColor = false;
             // 
             // EliminarA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(687, 309);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(231)))), ((int)(((byte)(159)))));
+            this.ClientSize = new System.Drawing.Size(653, 340);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.archivoDataGridView);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "EliminarA";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Eliminar";
             this.Load += new System.EventHandler(this.EliminarA_Load);
             ((System.ComponentModel.ISupportInitialize)(this.archivoBindingSource)).EndInit();

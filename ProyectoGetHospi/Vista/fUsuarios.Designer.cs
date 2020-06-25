@@ -29,24 +29,25 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fUsuarios));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.usuariosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.opcionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.registrarNuevoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.actualizarRegistroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.volverAlMenuPrincipalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eliminarUsuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.idUsuarioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nombreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dUIDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nITDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.usuarioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fechaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.usuariosBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.volverAlMenuPrincipalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.recargarDatosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.cambiarUsuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.usuariosBindingSource)).BeginInit();
+            this.menuStrip1.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -55,29 +56,27 @@
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(249)))), ((int)(((byte)(231)))));
+            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idUsuarioDataGridViewTextBoxColumn,
-            this.nombreDataGridViewTextBoxColumn,
-            this.dUIDataGridViewTextBoxColumn,
-            this.nITDataGridViewTextBoxColumn,
-            this.usuarioDataGridViewTextBoxColumn,
-            this.fechaDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.usuariosBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 82);
+            this.dataGridView1.Location = new System.Drawing.Point(236, 58);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(776, 281);
+            this.dataGridView1.Size = new System.Drawing.Size(498, 263);
             this.dataGridView1.TabIndex = 0;
             // 
             // menuStrip1
             // 
+            this.menuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(208)))), ((int)(((byte)(63)))));
+            this.menuStrip1.Dock = System.Windows.Forms.DockStyle.None;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.opcionesToolStripMenuItem,
             this.recargarDatosToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.VerticalStackWithOverflow;
+            this.menuStrip1.Location = new System.Drawing.Point(13, 198);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(167, 56);
             this.menuStrip1.TabIndex = 3;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -87,110 +86,121 @@
             this.registrarNuevoToolStripMenuItem,
             this.actualizarRegistroToolStripMenuItem,
             this.eliminarUsuarioToolStripMenuItem,
+            this.cambiarUsuarioToolStripMenuItem,
             this.volverAlMenuPrincipalToolStripMenuItem});
+            this.opcionesToolStripMenuItem.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.opcionesToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("opcionesToolStripMenuItem.Image")));
             this.opcionesToolStripMenuItem.Name = "opcionesToolStripMenuItem";
-            this.opcionesToolStripMenuItem.Size = new System.Drawing.Size(69, 20);
+            this.opcionesToolStripMenuItem.Size = new System.Drawing.Size(160, 25);
             this.opcionesToolStripMenuItem.Text = "Opciones";
             // 
             // registrarNuevoToolStripMenuItem
             // 
+            this.registrarNuevoToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(208)))), ((int)(((byte)(63)))));
+            this.registrarNuevoToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("registrarNuevoToolStripMenuItem.Image")));
             this.registrarNuevoToolStripMenuItem.Name = "registrarNuevoToolStripMenuItem";
-            this.registrarNuevoToolStripMenuItem.Size = new System.Drawing.Size(203, 22);
+            this.registrarNuevoToolStripMenuItem.Size = new System.Drawing.Size(220, 26);
             this.registrarNuevoToolStripMenuItem.Text = "Registrar Nuevo";
             this.registrarNuevoToolStripMenuItem.Click += new System.EventHandler(this.registrarNuevoToolStripMenuItem_Click);
             // 
             // actualizarRegistroToolStripMenuItem
             // 
+            this.actualizarRegistroToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(208)))), ((int)(((byte)(63)))));
+            this.actualizarRegistroToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("actualizarRegistroToolStripMenuItem.Image")));
             this.actualizarRegistroToolStripMenuItem.Name = "actualizarRegistroToolStripMenuItem";
-            this.actualizarRegistroToolStripMenuItem.Size = new System.Drawing.Size(201, 22);
+            this.actualizarRegistroToolStripMenuItem.Size = new System.Drawing.Size(220, 26);
             this.actualizarRegistroToolStripMenuItem.Text = "Actualizar Usuario";
             this.actualizarRegistroToolStripMenuItem.Click += new System.EventHandler(this.actualizarRegistroToolStripMenuItem_Click);
             // 
-            // volverAlMenuPrincipalToolStripMenuItem
-            // 
-            this.volverAlMenuPrincipalToolStripMenuItem.Name = "volverAlMenuPrincipalToolStripMenuItem";
-            this.volverAlMenuPrincipalToolStripMenuItem.Size = new System.Drawing.Size(203, 22);
-            this.volverAlMenuPrincipalToolStripMenuItem.Text = "Volver Al Menu Principal";
-            this.volverAlMenuPrincipalToolStripMenuItem.Click += new System.EventHandler(this.volverAlMenuPrincipalToolStripMenuItem_Click);
-            // 
             // eliminarUsuarioToolStripMenuItem
             // 
+            this.eliminarUsuarioToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(208)))), ((int)(((byte)(63)))));
+            this.eliminarUsuarioToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("eliminarUsuarioToolStripMenuItem.Image")));
             this.eliminarUsuarioToolStripMenuItem.Name = "eliminarUsuarioToolStripMenuItem";
-            this.eliminarUsuarioToolStripMenuItem.Size = new System.Drawing.Size(201, 22);
+            this.eliminarUsuarioToolStripMenuItem.Size = new System.Drawing.Size(220, 26);
             this.eliminarUsuarioToolStripMenuItem.Text = "Eliminar Usuario";
             this.eliminarUsuarioToolStripMenuItem.Click += new System.EventHandler(this.eliminarUsuarioToolStripMenuItem_Click);
             // 
-            // idUsuarioDataGridViewTextBoxColumn
+            // volverAlMenuPrincipalToolStripMenuItem
             // 
-            this.idUsuarioDataGridViewTextBoxColumn.DataPropertyName = "IdUsuario";
-            this.idUsuarioDataGridViewTextBoxColumn.HeaderText = "IdUsuario";
-            this.idUsuarioDataGridViewTextBoxColumn.Name = "idUsuarioDataGridViewTextBoxColumn";
-            this.idUsuarioDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // nombreDataGridViewTextBoxColumn
-            // 
-            this.nombreDataGridViewTextBoxColumn.DataPropertyName = "Nombre";
-            this.nombreDataGridViewTextBoxColumn.HeaderText = "Nombre";
-            this.nombreDataGridViewTextBoxColumn.Name = "nombreDataGridViewTextBoxColumn";
-            this.nombreDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // dUIDataGridViewTextBoxColumn
-            // 
-            this.dUIDataGridViewTextBoxColumn.DataPropertyName = "DUI";
-            this.dUIDataGridViewTextBoxColumn.HeaderText = "DUI";
-            this.dUIDataGridViewTextBoxColumn.Name = "dUIDataGridViewTextBoxColumn";
-            this.dUIDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // nITDataGridViewTextBoxColumn
-            // 
-            this.nITDataGridViewTextBoxColumn.DataPropertyName = "NIT";
-            this.nITDataGridViewTextBoxColumn.HeaderText = "NIT";
-            this.nITDataGridViewTextBoxColumn.Name = "nITDataGridViewTextBoxColumn";
-            this.nITDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // usuarioDataGridViewTextBoxColumn
-            // 
-            this.usuarioDataGridViewTextBoxColumn.DataPropertyName = "Usuario";
-            this.usuarioDataGridViewTextBoxColumn.HeaderText = "Usuario";
-            this.usuarioDataGridViewTextBoxColumn.Name = "usuarioDataGridViewTextBoxColumn";
-            this.usuarioDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // fechaDataGridViewTextBoxColumn
-            // 
-            this.fechaDataGridViewTextBoxColumn.DataPropertyName = "Fecha";
-            this.fechaDataGridViewTextBoxColumn.HeaderText = "Fecha";
-            this.fechaDataGridViewTextBoxColumn.Name = "fechaDataGridViewTextBoxColumn";
-            this.fechaDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // usuariosBindingSource
-            // 
-            this.usuariosBindingSource.DataSource = typeof(ProyectoGetHospi.Entidades.Usuarios);
+            this.volverAlMenuPrincipalToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(208)))), ((int)(((byte)(63)))));
+            this.volverAlMenuPrincipalToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("volverAlMenuPrincipalToolStripMenuItem.Image")));
+            this.volverAlMenuPrincipalToolStripMenuItem.Name = "volverAlMenuPrincipalToolStripMenuItem";
+            this.volverAlMenuPrincipalToolStripMenuItem.Size = new System.Drawing.Size(220, 26);
+            this.volverAlMenuPrincipalToolStripMenuItem.Text = "Volver";
+            this.volverAlMenuPrincipalToolStripMenuItem.Click += new System.EventHandler(this.volverAlMenuPrincipalToolStripMenuItem_Click);
             // 
             // recargarDatosToolStripMenuItem
             // 
+            this.recargarDatosToolStripMenuItem.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.recargarDatosToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("recargarDatosToolStripMenuItem.Image")));
             this.recargarDatosToolStripMenuItem.Name = "recargarDatosToolStripMenuItem";
-            this.recargarDatosToolStripMenuItem.Size = new System.Drawing.Size(98, 20);
+            this.recargarDatosToolStripMenuItem.Size = new System.Drawing.Size(160, 25);
             this.recargarDatosToolStripMenuItem.Text = "Recargar Datos";
             this.recargarDatosToolStripMenuItem.Click += new System.EventHandler(this.recargarDatosToolStripMenuItem_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(208)))), ((int)(((byte)(63)))));
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.menuStrip1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(194, 378);
+            this.panel1.TabIndex = 4;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(31, 47);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(127, 135);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(53, 22);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(82, 22);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Usuarios";
+            // 
+            // cambiarUsuarioToolStripMenuItem
+            // 
+            this.cambiarUsuarioToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(208)))), ((int)(((byte)(63)))));
+            this.cambiarUsuarioToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("cambiarUsuarioToolStripMenuItem.Image")));
+            this.cambiarUsuarioToolStripMenuItem.Name = "cambiarUsuarioToolStripMenuItem";
+            this.cambiarUsuarioToolStripMenuItem.Size = new System.Drawing.Size(220, 26);
+            this.cambiarUsuarioToolStripMenuItem.Text = "Cambiar Usuario";
             // 
             // fUsuarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 380);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(231)))), ((int)(((byte)(159)))));
+            this.ClientSize = new System.Drawing.Size(781, 378);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.menuStrip1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "fUsuarios";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Usuarios";
             this.Load += new System.EventHandler(this.fUsuarios_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.usuariosBindingSource)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.usuariosBindingSource)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -210,5 +220,9 @@
         private System.Windows.Forms.ToolStripMenuItem eliminarUsuarioToolStripMenuItem;
         public System.Windows.Forms.BindingSource usuariosBindingSource;
         private System.Windows.Forms.ToolStripMenuItem recargarDatosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cambiarUsuarioToolStripMenuItem;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
