@@ -1,0 +1,11 @@
+Excepcion general, actualizar no guarda cambios.
+
+CRUD Medicos -si-
+CRUD Usuarios -si-
+CRUD Pacientes -Registrar no funciona, solo interfaz-
+CRUD Archivos -Registrar no funciona, solo interfaz-
+CRUD Consultas -no-
+CRUD Diagnostco -no-
+CRUD Especialidades -no-
+
+

@@ -36,8 +36,17 @@
     <Reference Include="Dapper, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Dapper.2.0.30\lib\net461\Dapper.dll</HintPath>
     </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -69,6 +78,51 @@
     </Compile>
     <Compile Include="Logueo.Designer.cs">
       <DependentUpon>Logueo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="model\Archivos.cs">
+      <DependentUpon>getHospi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="model\Consultas.cs">
+      <DependentUpon>getHospi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="model\Diagnosticos.cs">
+      <DependentUpon>getHospi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="model\Especialidades.cs">
+      <DependentUpon>getHospi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="model\getHospi.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>getHospi.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="model\getHospi.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>getHospi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="model\getHospi.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>getHospi.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="model\Marcas.cs">
+      <DependentUpon>getHospi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="model\Medicos.cs">
+      <DependentUpon>getHospi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="model\Pacientes.cs">
+      <DependentUpon>getHospi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="model\Productos.cs">
+      <DependentUpon>getHospi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="model\sysdiagrams.cs">
+      <DependentUpon>getHospi.tt</DependentUpon>
+    </Compile>
+    <Compile Include="model\Usuarios.cs">
+      <DependentUpon>getHospi.tt</DependentUpon>
     </Compile>
     <Compile Include="Vista\ActualizarA.cs">
       <SubType>Form</SubType>
@@ -181,6 +235,12 @@
     <Compile Include="Vista\RegistrarA.Designer.cs">
       <DependentUpon>RegistrarA.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vista\RegistrarC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\RegistrarC.Designer.cs">
+      <DependentUpon>RegistrarC.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vista\RegistrarMed.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -262,6 +322,9 @@
     <EmbeddedResource Include="Vista\RegistrarA.resx">
       <DependentUpon>RegistrarA.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Vista\RegistrarC.resx">
+      <DependentUpon>RegistrarC.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vista\RegistrarMed.resx">
       <DependentUpon>RegistrarMed.cs</DependentUpon>
     </EmbeddedResource>
@@ -271,6 +334,13 @@
     <EmbeddedResource Include="Vista\RegistrarU.resx">
       <DependentUpon>RegistrarU.cs</DependentUpon>
     </EmbeddedResource>
+    <EntityDeploy Include="model\getHospi.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>getHospi.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="model\getHospi.edmx.diagram">
+      <DependentUpon>getHospi.edmx</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\DataSources\ProyectoGetHospi.Entidades.Archivo.datasource" />
     <None Include="Properties\DataSources\ProyectoGetHospi.Entidades.Consultas.datasource" />
@@ -292,6 +362,20 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="model\getHospi.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>getHospi.Context.cs</LastGenOutput>
+      <DependentUpon>getHospi.edmx</DependentUpon>
+    </Content>
+    <Content Include="model\getHospi.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>getHospi.edmx</DependentUpon>
+      <LastGenOutput>getHospi.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

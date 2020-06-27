@@ -1,0 +1,61 @@
+Error Progra Login, deberia realizar el inicio de sesion
+
+Error Logico Medicos, no se deberia poder cambiar de usuario desde este
+formulario
+
+Error logico Medicos, El boton *Volver* debe ser eliminado
+
+Error Progra Actualizar Medico, el Id del medico no debe ser editable
+
+Error Progra Actualizar Medico, el procedimiento almacenado *sp_update_Medicos*
+no funciona correctamente, se espera el parametro @IdMedico que no esta siendo enviado
+
+Error Progra Usuarios, la tabla no muestra datos
+
+Error Logico Usuarios, no se deberia cambiar de usuario en ese formulario
+
+Estetico Registrar Usuarios, se deberia mostrar el formulario al centro
+
+Error Progra Actualizar Usuarios, los campos de edicion se muestran vacios
+
+Error Progra Actualizar Usuarios, no guarda los cambios hechos
+
+Error Progra Pacientes, no carga algunos datos en la tabla
+
+Error Logico Pacientes, no se deberia cambiar de usuario en ese formulario
+
+Error Progra Registrar Pacientes, el campo *IdPaciente* no deberia ser editable
+
+Error Progra Registrar Pacientes, no se puede realizar el registro ya que el campo
+*Nombre* es devuelto como nulo
+
+Error Progra Actualizar Pacientes, los campos de edicion estan vacios
+
+Error Progra Actualizar Pacientes, no se guardan los datos editados
+
+Error Progra Eliminar Pacientes, no se muestran los datos en la tabla
+
+Error Progra Eliminar Pacientes, no elimina los datos
+
+Error Logico Archivos, boton de recarga de datos inexistente
+
+Error Logico Archivos, no se deberia cambiar de usuario en ese formulario
+
+Estetico Registrar Archivos, la tabla deberia mostrarse al centro
+
+Error Progra Registrar Archivos, no se puede realizar la insercion de datos
+, el causante fue el campo *Peso* el error fue "Referencia a objeto no establecida como instancia de un objeto"
+
+Funcionamiento Desconocido Actualizar Archivos, no se ha realizado pruebas por el momento
+
+Funcionamiento Desconocido Eliminar Archivos, no se han realizado pruebas por el momento
+
+No Programado Consultas, el formulario viene por default
+
+No programado Diagnosticos, el formulario viene por default
+
+No Programado Especialidades, el formulario viene por default
+
+
+
+
