@@ -34,5 +34,23 @@ namespace ProyectoGetHospi.Vista
         {
 
         }
+
+        private void registrarEspecialidadToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            RegistrarE RE = new RegistrarE();
+            RE.Show();
+        }
+
+        private void actualizarEspecialidadToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ActualizarE AE = new ActualizarE();
+            AE.Show();
+        }
+
+        private void eliminarEspecialidadToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EliminarE EE = new EliminarE();
+            EE.Show();
+        }
     }
 }

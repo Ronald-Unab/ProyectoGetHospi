@@ -11,9 +11,9 @@ using ProyectoGetHospi.Modelos;
 
 namespace ProyectoGetHospi.Vista
 {
-    public partial class fConsulta : Form
+    public partial class Consulta : Form
     {
-        public fConsulta()
+        public Consulta()
         {
             InitializeComponent();
         }
@@ -29,6 +29,24 @@ namespace ProyectoGetHospi.Vista
         private void fConsulta_Load(object sender, EventArgs e)
         {
             consultasBindingSource.DataSource = mConsulta.Listado();
+        }
+
+        private void registrarConsultaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            RegistrarC RC = new RegistrarC();
+            RC.Show();
+        }
+
+        private void actualizarConsultaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ActualizarC AC = new ActualizarC();
+            AC.Show();
+        }
+
+        private void eliminarConsultaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EliminarC EC = new EliminarC();
+            EC.Show();
         }
     }
 }

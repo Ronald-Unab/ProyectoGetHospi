@@ -29,5 +29,23 @@ namespace ProyectoGetHospi.Vista
         {
             diagnosticosBindingSource.DataSource = mDiagnosticos.Listado();
         }
+
+        private void nuevoDiagnosticoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            RegistrarD RD = new RegistrarD();
+            RD.Show();
+        }
+
+        private void actualizarDiagnosticoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ActualizarD AD = new ActualizarD();
+            AD.Show();
+        }
+
+        private void eliminarDiagnosticoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EliminarD ED = new EliminarD();
+            ED.Show();
+        }
     }
 }

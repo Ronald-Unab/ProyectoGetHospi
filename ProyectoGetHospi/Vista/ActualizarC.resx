@@ -117,26 +117,19 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="btnRegresar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAB
-        nQAAAZ0BKMeG7QAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAE4SURBVEhLtdKv
-        SwRBFMDxBRVsmu4/sIugrOAPsNgNgsluEP8Ei+IZ5KJFbGKRq2K0aBCLQTCIzSAKoibR9fvuZvTt+Dhu
-        5+YefJaZeW/e24XNiqLoK/MwJfMwpf8HWTaMdYyHuRjlTbv5KWTT1LlYf4ty8w/M6cJY7Ue5+Tvmw8JY
-        Err5G2atwlgSx5CVf/uHCPc4wxZKP4fEHfyAFD6xiUE/YAIvkN0jFpFXNI1VnMAP2m0NcFP0kEuM+E+s
-        iljBN76Q60TKIfuuz0GY0EMOda4KYsH1uLGSMuQaG2GuW8QYZPFqFvSKWHIDzs2CXhADuHAD6mZRLGIU
-        R675E2pmoUZMYRs7HdTRxDPkkvyiy637YcMQceUudesW+e993cxCzGAPjQ4kv4ZJDJXu600/mIcpmYfp
-        FNkPZCQmhvV7FD8AAAAASUVORK5CYII=
-</value>
-  </data>
-  <metadata name="diagnosticosBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <metadata name="consultasBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>216, 17</value>
+  <metadata name="idArchivoLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
   </metadata>
-  <metadata name="diagnosticosBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
+  <metadata name="idConsultaLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="idMedicoLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="nombreLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
   </metadata>
 </root>

@@ -51,7 +51,7 @@ namespace ProyectoGetHospi.Vista
 
         private void btnConsulta_Click(object sender, EventArgs e)
         {
-            fConsulta fc = new fConsulta();
+            Consulta fc = new Consulta();
             fc.MdiParent = this;
             fc.Show();
             //Hide();

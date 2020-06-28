@@ -22,10 +22,14 @@ namespace ProyectoGetHospi.Vista
         {
             
         }
-
-        private void fArchivos_Load(object sender, EventArgs e)
+        public void cargardatos() 
         {
             archivoBindingSource.DataSource = mArchivos.Listado();
+
+        }
+        private void fArchivos_Load(object sender, EventArgs e)
+        {
+            cargardatos();
         }
 
         private void volverAlMenuPrincipalToolStripMenuItem_Click(object sender, EventArgs e)
@@ -57,6 +61,23 @@ namespace ProyectoGetHospi.Vista
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void actualizarArchivoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ActualizarA AA = new ActualizarA();
+            AA.Show();
+        }
+
+        private void eliminarArchivoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EliminarA EA = new EliminarA();
+            EA.Show();
+        }
+
+        private void recargarDatosToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
 
         }
