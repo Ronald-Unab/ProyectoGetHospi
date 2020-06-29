@@ -67,7 +67,7 @@
             // 
             // diagnosticosBindingSource
             // 
-            this.diagnosticosBindingSource.DataSource = typeof(ProyectoGetHospi.Entidades.Diagnosticos);
+            //this.diagnosticosBindingSource.DataSource = typeof(ProyectoGetHospi.Entidades.Diagnosticos);
             // 
             // diagnosticoLabel
             // 

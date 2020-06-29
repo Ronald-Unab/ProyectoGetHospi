@@ -37,17 +37,12 @@
             this.eliminarArchivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cambiarUsuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.volverAlMenuPrincipalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.recargarDatosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.recargarDatosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.archivoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.archivoDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -129,6 +124,13 @@
             this.volverAlMenuPrincipalToolStripMenuItem.Text = "Volver ";
             this.volverAlMenuPrincipalToolStripMenuItem.Click += new System.EventHandler(this.volverAlMenuPrincipalToolStripMenuItem_Click);
             // 
+            // recargarDatosToolStripMenuItem
+            // 
+            this.recargarDatosToolStripMenuItem.Name = "recargarDatosToolStripMenuItem";
+            this.recargarDatosToolStripMenuItem.Size = new System.Drawing.Size(111, 19);
+            this.recargarDatosToolStripMenuItem.Text = "Recargar Datos";
+            this.recargarDatosToolStripMenuItem.Click += new System.EventHandler(this.recargarDatosToolStripMenuItem_Click_1);
+            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(208)))), ((int)(((byte)(63)))));
@@ -163,63 +165,16 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // recargarDatosToolStripMenuItem
-            // 
-            this.recargarDatosToolStripMenuItem.Name = "recargarDatosToolStripMenuItem";
-            this.recargarDatosToolStripMenuItem.Size = new System.Drawing.Size(111, 19);
-            this.recargarDatosToolStripMenuItem.Text = "Recargar Datos";
-            this.recargarDatosToolStripMenuItem.Click += new System.EventHandler(this.recargarDatosToolStripMenuItem_Click_1);
-            // 
-            // archivoBindingSource
-            // 
-            this.archivoBindingSource.DataSource = typeof(ProyectoGetHospi.Entidades.Archivo);
-            // 
             // archivoDataGridView
             // 
             this.archivoDataGridView.AutoGenerateColumns = false;
             this.archivoDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.archivoDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.archivoDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5});
             this.archivoDataGridView.DataSource = this.archivoBindingSource;
-            this.archivoDataGridView.Location = new System.Drawing.Point(186, 15);
+            this.archivoDataGridView.Location = new System.Drawing.Point(207, 46);
             this.archivoDataGridView.Name = "archivoDataGridView";
-            this.archivoDataGridView.Size = new System.Drawing.Size(585, 373);
+            this.archivoDataGridView.Size = new System.Drawing.Size(554, 299);
             this.archivoDataGridView.TabIndex = 3;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "IdArchivo";
-            this.dataGridViewTextBoxColumn1.HeaderText = "IdArchivo";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "Peso";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Peso";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "PresionArterial";
-            this.dataGridViewTextBoxColumn3.HeaderText = "PresionArterial";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "Temperatura";
-            this.dataGridViewTextBoxColumn4.HeaderText = "Temperatura";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "IdPaciente";
-            this.dataGridViewTextBoxColumn5.HeaderText = "IdPaciente";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
             // 
             // fArchivos
             // 

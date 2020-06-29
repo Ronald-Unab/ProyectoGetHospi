@@ -42,6 +42,7 @@
             System.Windows.Forms.Label telefonoLabel;
             this.grbRegistrarP = new System.Windows.Forms.GroupBox();
             this.cédulaPacienteTextBox = new System.Windows.Forms.TextBox();
+            this.pacientesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.direcciónTextBox = new System.Windows.Forms.TextBox();
             this.fechaNcimientoDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.grupoSanguineoTextBox = new System.Windows.Forms.TextBox();
@@ -54,7 +55,6 @@
             this.telefonoTextBox = new System.Windows.Forms.TextBox();
             this.btnGuardarP = new System.Windows.Forms.Button();
             this.btnNuevoP = new System.Windows.Forms.Button();
-            this.pacientesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             cédulaPacienteLabel = new System.Windows.Forms.Label();
             direcciónLabel = new System.Windows.Forms.Label();
             fechaNcimientoLabel = new System.Windows.Forms.Label();
@@ -194,9 +194,9 @@
             this.grbRegistrarP.Controls.Add(this.sexoTextBox);
             this.grbRegistrarP.Controls.Add(telefonoLabel);
             this.grbRegistrarP.Controls.Add(this.telefonoTextBox);
-            this.grbRegistrarP.Location = new System.Drawing.Point(12, 12);
+            this.grbRegistrarP.Location = new System.Drawing.Point(54, 37);
             this.grbRegistrarP.Name = "grbRegistrarP";
-            this.grbRegistrarP.Size = new System.Drawing.Size(331, 313);
+            this.grbRegistrarP.Size = new System.Drawing.Size(436, 327);
             this.grbRegistrarP.TabIndex = 0;
             this.grbRegistrarP.TabStop = false;
             // 
@@ -292,7 +292,7 @@
             // 
             // btnGuardarP
             // 
-            this.btnGuardarP.Location = new System.Drawing.Point(205, 332);
+            this.btnGuardarP.Location = new System.Drawing.Point(599, 217);
             this.btnGuardarP.Name = "btnGuardarP";
             this.btnGuardarP.Size = new System.Drawing.Size(75, 23);
             this.btnGuardarP.TabIndex = 4;
@@ -302,7 +302,7 @@
             // 
             // btnNuevoP
             // 
-            this.btnNuevoP.Location = new System.Drawing.Point(90, 332);
+            this.btnNuevoP.Location = new System.Drawing.Point(599, 149);
             this.btnNuevoP.Name = "btnNuevoP";
             this.btnNuevoP.Size = new System.Drawing.Size(75, 23);
             this.btnNuevoP.TabIndex = 3;
@@ -310,15 +310,11 @@
             this.btnNuevoP.UseVisualStyleBackColor = true;
             this.btnNuevoP.Click += new System.EventHandler(this.btnNuevoP_Click);
             // 
-            // pacientesBindingSource
-            // 
-            this.pacientesBindingSource.DataSource = typeof(ProyectoGetHospi.Entidades.Pacientes);
-            // 
             // RegistrarP
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(364, 367);
+            this.ClientSize = new System.Drawing.Size(748, 375);
             this.Controls.Add(this.btnGuardarP);
             this.Controls.Add(this.btnNuevoP);
             this.Controls.Add(this.grbRegistrarP);

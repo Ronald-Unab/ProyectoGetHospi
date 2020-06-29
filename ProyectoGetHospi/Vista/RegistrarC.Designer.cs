@@ -97,7 +97,7 @@
             // 
             // consultasBindingSource
             // 
-            this.consultasBindingSource.DataSource = typeof(ProyectoGetHospi.Entidades.Consultas);
+            //this.consultasBindingSource.DataSource = typeof(ProyectoGetHospi.Entidades.Consultas);
             // 
             // idConsultaTextBox
             // 

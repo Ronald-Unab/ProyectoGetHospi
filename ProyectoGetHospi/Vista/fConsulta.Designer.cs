@@ -157,7 +157,7 @@
             // 
             // consultasBindingSource1
             // 
-            this.consultasBindingSource1.DataSource = typeof(ProyectoGetHospi.Entidades.Consultas);
+            //this.consultasBindingSource1.DataSource = typeof(ProyectoGetHospi.Entidades.Consultas);
             // 
             // Consulta
             // 

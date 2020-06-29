@@ -46,7 +46,7 @@
             // 
             // especialidadesBindingSource
             // 
-            this.especialidadesBindingSource.DataSource = typeof(ProyectoGetHospi.Entidades.Especialidades);
+            //this.especialidadesBindingSource.DataSource = typeof(ProyectoGetHospi.Entidades.Especialidades);
             // 
             // idEspecialidadLabel
             // 

@@ -223,7 +223,7 @@
             // 
             // usuariobindingSource
             // 
-            this.usuariobindingSource.DataSource = typeof(ProyectoGetHospi.Entidades.Usuarios);
+            //this.usuariobindingSource.DataSource = typeof(ProyectoGetHospi.Entidades.Usuarios);
             // 
             // RegistrarU
             // 

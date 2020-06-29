@@ -51,5 +51,7 @@ namespace ProyectoGetHospi.Vista
             MessageBox.Show("Se han actualizado los datos del medico");
             this.Close();
         }
+
+      
     }
 }
