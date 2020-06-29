@@ -51,5 +51,10 @@ namespace ProyectoGetHospi.Vista
             groupBox1.Enabled = false;
             btnGuardar.Enabled = false;
         }
+
+        private void pesoLabel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

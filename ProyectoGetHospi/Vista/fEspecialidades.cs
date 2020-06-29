@@ -52,5 +52,6 @@ namespace ProyectoGetHospi.Vista
             EliminarE EE = new EliminarE();
             EE.Show();
         }
+
     }
 }

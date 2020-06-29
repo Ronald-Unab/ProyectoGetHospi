@@ -37,11 +37,6 @@ namespace ProyectoGetHospi
             cargardatos();
         }
 
-        private void btnRegresar_Click(object sender, EventArgs e)
-        {
-            
-        }
-
         private void volverAlMenuPrincipalToolStripMenuItem_Click(object sender, EventArgs e)
         {
             fMenu M = new fMenu();
@@ -78,9 +73,11 @@ namespace ProyectoGetHospi
             AM.Show();
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private void btnRegresar_Click(object sender, EventArgs e)
         {
-
+            fMenu M = new fMenu();
+            M.Show();
+            Hide();
         }
     }
 }

@@ -55,5 +55,7 @@ namespace ProyectoGetHospi.Vista
             }
             catch { }
         }
+
+      
     }
 }

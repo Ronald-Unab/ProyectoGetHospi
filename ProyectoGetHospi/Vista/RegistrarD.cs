@@ -16,5 +16,10 @@ namespace ProyectoGetHospi.Vista
         {
             InitializeComponent();
         }
+
+        private void RegistrarD_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -35,25 +35,18 @@
             this.registrarNuevoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.actualizarMedicoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eliminarMedicoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cambiarDeUsuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.volverAlMenuPrincipalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.recargarDatosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.médicoDataGridView = new System.Windows.Forms.DataGridView();
+            this.médicoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.médicoBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.idMedicoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nombreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.direccionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dUIDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.telefonoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cedulaMedicoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnRegresar = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.médicoDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.médicoBindingSource)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.médicoBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -77,9 +70,7 @@
             this.opcionesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.registrarNuevoToolStripMenuItem,
             this.actualizarMedicoToolStripMenuItem,
-            this.eliminarMedicoToolStripMenuItem,
-            this.cambiarDeUsuarioToolStripMenuItem,
-            this.volverAlMenuPrincipalToolStripMenuItem});
+            this.eliminarMedicoToolStripMenuItem});
             this.opcionesToolStripMenuItem.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.opcionesToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("opcionesToolStripMenuItem.Image")));
             this.opcionesToolStripMenuItem.Name = "opcionesToolStripMenuItem";
@@ -92,8 +83,8 @@
             this.registrarNuevoToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(208)))), ((int)(((byte)(63)))));
             this.registrarNuevoToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("registrarNuevoToolStripMenuItem.Image")));
             this.registrarNuevoToolStripMenuItem.Name = "registrarNuevoToolStripMenuItem";
-            this.registrarNuevoToolStripMenuItem.Size = new System.Drawing.Size(234, 26);
-            this.registrarNuevoToolStripMenuItem.Text = "Registrar Nuevo";
+            this.registrarNuevoToolStripMenuItem.Size = new System.Drawing.Size(223, 26);
+            this.registrarNuevoToolStripMenuItem.Text = "Registrar Médico";
             this.registrarNuevoToolStripMenuItem.Click += new System.EventHandler(this.registrarNuevoToolStripMenuItem_Click);
             // 
             // actualizarMedicoToolStripMenuItem
@@ -101,8 +92,8 @@
             this.actualizarMedicoToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(208)))), ((int)(((byte)(63)))));
             this.actualizarMedicoToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("actualizarMedicoToolStripMenuItem.Image")));
             this.actualizarMedicoToolStripMenuItem.Name = "actualizarMedicoToolStripMenuItem";
-            this.actualizarMedicoToolStripMenuItem.Size = new System.Drawing.Size(234, 26);
-            this.actualizarMedicoToolStripMenuItem.Text = "Actualizar Medico";
+            this.actualizarMedicoToolStripMenuItem.Size = new System.Drawing.Size(223, 26);
+            this.actualizarMedicoToolStripMenuItem.Text = "Actualizar Médico";
             this.actualizarMedicoToolStripMenuItem.Click += new System.EventHandler(this.actualizarMedicoToolStripMenuItem_Click);
             // 
             // eliminarMedicoToolStripMenuItem
@@ -110,27 +101,9 @@
             this.eliminarMedicoToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(208)))), ((int)(((byte)(63)))));
             this.eliminarMedicoToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("eliminarMedicoToolStripMenuItem.Image")));
             this.eliminarMedicoToolStripMenuItem.Name = "eliminarMedicoToolStripMenuItem";
-            this.eliminarMedicoToolStripMenuItem.Size = new System.Drawing.Size(234, 26);
-            this.eliminarMedicoToolStripMenuItem.Text = "Eliminar Medico";
+            this.eliminarMedicoToolStripMenuItem.Size = new System.Drawing.Size(223, 26);
+            this.eliminarMedicoToolStripMenuItem.Text = "Eliminar Médico";
             this.eliminarMedicoToolStripMenuItem.Click += new System.EventHandler(this.eliminarMedicoToolStripMenuItem_Click);
-            // 
-            // cambiarDeUsuarioToolStripMenuItem
-            // 
-            this.cambiarDeUsuarioToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(208)))), ((int)(((byte)(63)))));
-            this.cambiarDeUsuarioToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("cambiarDeUsuarioToolStripMenuItem.Image")));
-            this.cambiarDeUsuarioToolStripMenuItem.Name = "cambiarDeUsuarioToolStripMenuItem";
-            this.cambiarDeUsuarioToolStripMenuItem.Size = new System.Drawing.Size(234, 26);
-            this.cambiarDeUsuarioToolStripMenuItem.Text = "Cambiar de Usuario";
-            // 
-            // volverAlMenuPrincipalToolStripMenuItem
-            // 
-            this.volverAlMenuPrincipalToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(208)))), ((int)(((byte)(63)))));
-            this.volverAlMenuPrincipalToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("volverAlMenuPrincipalToolStripMenuItem.Image")));
-            this.volverAlMenuPrincipalToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.volverAlMenuPrincipalToolStripMenuItem.Name = "volverAlMenuPrincipalToolStripMenuItem";
-            this.volverAlMenuPrincipalToolStripMenuItem.Size = new System.Drawing.Size(234, 26);
-            this.volverAlMenuPrincipalToolStripMenuItem.Text = "Volver ";
-            this.volverAlMenuPrincipalToolStripMenuItem.Click += new System.EventHandler(this.volverAlMenuPrincipalToolStripMenuItem_Click);
             // 
             // recargarDatosToolStripMenuItem
             // 
@@ -150,18 +123,11 @@
             this.médicoDataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(249)))), ((int)(((byte)(231)))));
             this.médicoDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.médicoDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.médicoDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idMedicoDataGridViewTextBoxColumn,
-            this.nombreDataGridViewTextBoxColumn,
-            this.direccionDataGridViewTextBoxColumn,
-            this.dUIDataGridViewTextBoxColumn,
-            this.telefonoDataGridViewTextBoxColumn,
-            this.cedulaMedicoDataGridViewTextBoxColumn});
             this.médicoDataGridView.DataSource = this.médicoBindingSource;
-            this.médicoDataGridView.Location = new System.Drawing.Point(186, 14);
+            this.médicoDataGridView.Location = new System.Drawing.Point(207, 46);
             this.médicoDataGridView.Name = "médicoDataGridView";
             this.médicoDataGridView.ReadOnly = true;
-            this.médicoDataGridView.Size = new System.Drawing.Size(696, 466);
+            this.médicoDataGridView.Size = new System.Drawing.Size(554, 299);
             this.médicoDataGridView.TabIndex = 4;
             // 
             // panel1
@@ -173,9 +139,8 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(180, 492);
+            this.panel1.Size = new System.Drawing.Size(180, 400);
             this.panel1.TabIndex = 5;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // label1
             // 
@@ -197,61 +162,33 @@
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             // 
-            // médicoBindingSource
+            // btnRegresar
             // 
-            this.médicoBindingSource.DataSource = typeof(ProyectoGetHospi.Entidades.Médico);
-            // 
-            // idMedicoDataGridViewTextBoxColumn
-            // 
-            this.idMedicoDataGridViewTextBoxColumn.DataPropertyName = "IdMedico";
-            this.idMedicoDataGridViewTextBoxColumn.HeaderText = "IdMedico";
-            this.idMedicoDataGridViewTextBoxColumn.Name = "idMedicoDataGridViewTextBoxColumn";
-            this.idMedicoDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // nombreDataGridViewTextBoxColumn
-            // 
-            this.nombreDataGridViewTextBoxColumn.DataPropertyName = "Nombre";
-            this.nombreDataGridViewTextBoxColumn.HeaderText = "Nombre";
-            this.nombreDataGridViewTextBoxColumn.Name = "nombreDataGridViewTextBoxColumn";
-            this.nombreDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // direccionDataGridViewTextBoxColumn
-            // 
-            this.direccionDataGridViewTextBoxColumn.DataPropertyName = "Direccion";
-            this.direccionDataGridViewTextBoxColumn.HeaderText = "Direccion";
-            this.direccionDataGridViewTextBoxColumn.Name = "direccionDataGridViewTextBoxColumn";
-            this.direccionDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // dUIDataGridViewTextBoxColumn
-            // 
-            this.dUIDataGridViewTextBoxColumn.DataPropertyName = "DUI";
-            this.dUIDataGridViewTextBoxColumn.HeaderText = "DUI";
-            this.dUIDataGridViewTextBoxColumn.Name = "dUIDataGridViewTextBoxColumn";
-            this.dUIDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // telefonoDataGridViewTextBoxColumn
-            // 
-            this.telefonoDataGridViewTextBoxColumn.DataPropertyName = "Telefono";
-            this.telefonoDataGridViewTextBoxColumn.HeaderText = "Telefono";
-            this.telefonoDataGridViewTextBoxColumn.Name = "telefonoDataGridViewTextBoxColumn";
-            this.telefonoDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // cedulaMedicoDataGridViewTextBoxColumn
-            // 
-            this.cedulaMedicoDataGridViewTextBoxColumn.DataPropertyName = "CedulaMedico";
-            this.cedulaMedicoDataGridViewTextBoxColumn.HeaderText = "CedulaMedico";
-            this.cedulaMedicoDataGridViewTextBoxColumn.Name = "cedulaMedicoDataGridViewTextBoxColumn";
-            this.cedulaMedicoDataGridViewTextBoxColumn.ReadOnly = true;
+            this.btnRegresar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(208)))), ((int)(((byte)(63)))));
+            this.btnRegresar.FlatAppearance.BorderSize = 0;
+            this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegresar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegresar.Image = ((System.Drawing.Image)(resources.GetObject("btnRegresar.Image")));
+            this.btnRegresar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRegresar.Location = new System.Drawing.Point(619, 351);
+            this.btnRegresar.Name = "btnRegresar";
+            this.btnRegresar.Size = new System.Drawing.Size(142, 32);
+            this.btnRegresar.TabIndex = 6;
+            this.btnRegresar.Text = "Volver al menú";
+            this.btnRegresar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnRegresar.UseVisualStyleBackColor = false;
+            this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
             // 
             // fMedico
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(231)))), ((int)(((byte)(159)))));
-            this.ClientSize = new System.Drawing.Size(894, 492);
+            this.ClientSize = new System.Drawing.Size(783, 400);
+            this.Controls.Add(this.btnRegresar);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.médicoDataGridView);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "fMedico";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -260,10 +197,10 @@
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.médicoDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.médicoBindingSource)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.médicoBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -274,7 +211,6 @@
         private System.Windows.Forms.ToolStripMenuItem registrarNuevoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem actualizarMedicoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem eliminarMedicoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem volverAlMenuPrincipalToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem recargarDatosToolStripMenuItem;
         private System.Windows.Forms.DataGridView médicoDataGridView;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
@@ -285,7 +221,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.ToolStripMenuItem cambiarDeUsuarioToolStripMenuItem;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridViewTextBoxColumn idMedicoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nombreDataGridViewTextBoxColumn;
@@ -294,6 +229,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn telefonoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn cedulaMedicoDataGridViewTextBoxColumn;
         private System.Windows.Forms.BindingSource médicoBindingSource;
+        private System.Windows.Forms.Button btnRegresar;
     }
 }
 

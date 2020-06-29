@@ -11,7 +11,7 @@ using ProyectoGetHospi.Modelos;
 using ProyectoGetHospi.Controladores;
 using ProyectoGetHospi.Entidades;
 namespace ProyectoGetHospi.Vista
-    
+  
 
 {
     public partial class ActualizarU : Form
