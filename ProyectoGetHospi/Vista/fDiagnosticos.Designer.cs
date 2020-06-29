@@ -79,7 +79,7 @@
             this.diagnosticosDataGridView.Name = "diagnosticosDataGridView";
             this.diagnosticosDataGridView.Size = new System.Drawing.Size(554, 299);
             this.diagnosticosDataGridView.TabIndex = 4;
-            // 
+            //
             // menuStrip1
             // 
             this.menuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(208)))), ((int)(((byte)(63)))));

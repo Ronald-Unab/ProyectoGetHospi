@@ -30,11 +30,6 @@ namespace ProyectoGetHospi.Vista
             cargardatos();
         }
 
-        private void btnRegresar_Click(object sender, EventArgs e)
-        {
-            
-        }
-
         private void volverAlMenuPrincipalToolStripMenuItem_Click(object sender, EventArgs e)
         {
             fMenu M = new fMenu();

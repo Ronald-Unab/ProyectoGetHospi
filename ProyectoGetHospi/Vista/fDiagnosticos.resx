@@ -133,9 +133,6 @@
   <metadata name="diagnosticosBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <metadata name="diagnosticosBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
   <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>216, 17</value>
   </metadata>
@@ -214,45 +211,6 @@
         ZNMAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="nuevoDiagnosticoToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAB3RJ
-        TUUH5AUeBxsOcuas8AAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAACzSURBVDhP
-        5ZM7CgIxFEVTWaqLsNDOzy7sZiN+9iIICtYiinY2MqULcEXeA3mQickQbT1wyHs3j0yKjEswk3fvlKCU
-        iTzJl+zJvq/JxjLLWl7lU64IIsjYY2ZJEMMGjGQt+WIo2VCCzTZgqBSbreRDbmh+OeAoO/JCY+FOUqdk
-        D6g/VmtKaD3gz25wkF15prHwmxvM5VbuaSwsIZzlIQ0oks8zw82vDfhBOMSum5OZhQxw7g1GL0gPyeSa
-        3gAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="actualizarDiagnosticoToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAALkAAAC5AeKnQegAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwa
-        AAACIElEQVRIS6XVzUuUURTH8TsVvYGtpEULsyJsUYIbd1G0MRICwYWJILgRKqI/IEhRgxZFLQqiFtE2
-        gihatOgFWpSCC6ncuAiCUoJeCSUpp+/vzrnP3Hm8qfN04MOcc+6Ze2eGeZ7Hlctlj7iCF6FOIbZga2rt
-        X6qJc69AGi06tw9ncQev8dtM4RYG0RK/J6+aRAcQGzGMRfXMZzzBW/yynujAi9gU9opVEzsA7XhjuT71
-        KRxAKZpdjz04g69QcxrtYSabzZLqAfpEer2OzfFwCrEdt7EEvbenZj0aDAfo63fHQ2tBdEGHfMGOrB8N
-        XIUSmcM1HMa6MLMa4jKUPMx60eIGHIO+bvhd5T2awtxKCP05JqGi3/fyQ75ZGQyHjWNNBwjRBiUTvrZm
-        czz0v4hPWIB+FdcNdQ+lhosg7tmerSrOWdGVGi6C0NWvpF/FmBUdqeEiiAHbc0TFCSuOp4aLIHTrUNKr
-        Yq8VQ6nhIoj7tmeLihK+4XFquAhiBt9RCo2n0GW+Pz9cL6IHSp772ppHrXk3Hq4X0YAPtlen70WLeoAo
-        ORl69SIu2R43s160uA267yy75a6G0BU7ij94h4ZsLTd4BD+h4hF2x+spmsFLqPiBgzXrceEbzu3CM6jQ
-        /eQCOtAM/1QjmtCHG9C/RU09Tncu2y/f8M3KX/c0wrcJ5jGb62lGj9XskVqzV6oZEI3oxHk8wEejXD2t
-        NabeW1F2fwGkG7wHcrvRNQAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="eliminarDiagnosticoToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAAOkAAADpAVSSFEsAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwa
-        AAABQklEQVRIS7XVvUpDQRQE4CEgGPAJTJPCh7AR8gRWGoKVpT9gY+MTiKXWKewsBG3ttbCwsVdErBTF
-        QgsLi+uc61043DmEXYkLHySzmQkXAkFVVRPxrNE92RvvgVaijheGCc8svdEZrbec0wvNRN0kDBOePtmL
-        QXA3aO767TvPTpeu6TnwSvapd5clltmdfaZ9Z2yzm75lRHtTNqq3/eP8hzCcJg2ATfeYpbZkTwLghuzF
-        X9zKngS/v29fKnEhexIAh65Q6lj2JAB2XaHUvuxJAAxdodSO7EkALLpCqVXZkwDouUKpJdmTAOjQd1Mo
-        tSB77aAOgUdXKjEnW+2gDoErV8r1GW6FIXDiirnuwq0wBA5cMddluBWGwLYr5joNt8IQWHbFXEfhVhgC
-        8/TVFHPV/2CyFYWGZ4OemvIkHzSmju5U+AHMt/xcfyzirAAAAABJRU5ErkJggg==
-</value>
-  </data>
   <data name="recargarDatosToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAD
@@ -322,6 +280,45 @@
         rITxpANRpxS9fLGhcVUVNrEqCF2GlU/XqhdNVwVugqvRUmXrfvzPoEGa6m4diDuZNrHKCA2u0OwmGrB6
         DDSe/kfQgxi6764ZtNVDp3sPuozTT7caiLqC0JCqn+Ai6AEYHVh6t96oumf718La/wGSQFAjLYgbtgAA
         AABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="nuevoDiagnosticoToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAB3RJ
+        TUUH5AUeBxsOcuas8AAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAACzSURBVDhP
+        5ZM7CgIxFEVTWaqLsNDOzy7sZiN+9iIICtYiinY2MqULcEXeA3mQickQbT1wyHs3j0yKjEswk3fvlKCU
+        iTzJl+zJvq/JxjLLWl7lU64IIsjYY2ZJEMMGjGQt+WIo2VCCzTZgqBSbreRDbmh+OeAoO/JCY+FOUqdk
+        D6g/VmtKaD3gz25wkF15prHwmxvM5VbuaSwsIZzlIQ0oks8zw82vDfhBOMSum5OZhQxw7g1GL0gPyeSa
+        3gAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="actualizarDiagnosticoToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAALkAAAC5AeKnQegAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwa
+        AAACIElEQVRIS6XVzUuUURTH8TsVvYGtpEULsyJsUYIbd1G0MRICwYWJILgRKqI/IEhRgxZFLQqiFtE2
+        gihatOgFWpSCC6ncuAiCUoJeCSUpp+/vzrnP3Hm8qfN04MOcc+6Ze2eGeZ7Hlctlj7iCF6FOIbZga2rt
+        X6qJc69AGi06tw9ncQev8dtM4RYG0RK/J6+aRAcQGzGMRfXMZzzBW/yynujAi9gU9opVEzsA7XhjuT71
+        KRxAKZpdjz04g69QcxrtYSabzZLqAfpEer2OzfFwCrEdt7EEvbenZj0aDAfo63fHQ2tBdEGHfMGOrB8N
+        XIUSmcM1HMa6MLMa4jKUPMx60eIGHIO+bvhd5T2awtxKCP05JqGi3/fyQ75ZGQyHjWNNBwjRBiUTvrZm
+        czz0v4hPWIB+FdcNdQ+lhosg7tmerSrOWdGVGi6C0NWvpF/FmBUdqeEiiAHbc0TFCSuOp4aLIHTrUNKr
+        Yq8VQ6nhIoj7tmeLihK+4XFquAhiBt9RCo2n0GW+Pz9cL6IHSp772ppHrXk3Hq4X0YAPtlen70WLeoAo
+        ORl69SIu2R43s160uA267yy75a6G0BU7ij94h4ZsLTd4BD+h4hF2x+spmsFLqPiBgzXrceEbzu3CM6jQ
+        /eQCOtAM/1QjmtCHG9C/RU09Tncu2y/f8M3KX/c0wrcJ5jGb62lGj9XskVqzV6oZEI3oxHk8wEejXD2t
+        NabeW1F2fwGkG7wHcrvRNQAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="eliminarDiagnosticoToolStripMenuItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAAOkAAADpAVSSFEsAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwa
+        AAABQklEQVRIS7XVvUpDQRQE4CEgGPAJTJPCh7AR8gRWGoKVpT9gY+MTiKXWKewsBG3ttbCwsVdErBTF
+        QgsLi+uc61043DmEXYkLHySzmQkXAkFVVRPxrNE92RvvgVaijheGCc8svdEZrbec0wvNRN0kDBOePtmL
+        QXA3aO767TvPTpeu6TnwSvapd5clltmdfaZ9Z2yzm75lRHtTNqq3/eP8hzCcJg2ATfeYpbZkTwLghuzF
+        X9zKngS/v29fKnEhexIAh65Q6lj2JAB2XaHUvuxJAAxdodSO7EkALLpCqVXZkwDouUKpJdmTAOjQd1Mo
+        tSB77aAOgUdXKjEnW+2gDoErV8r1GW6FIXDiirnuwq0wBA5cMddluBWGwLYr5joNt8IQWHbFXEfhVhgC
+        8/TVFHPV/2CyFYWGZ4OemvIkHzSmju5U+AHMt/xcfyzirAAAAABJRU5ErkJggg==
 </value>
   </data>
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

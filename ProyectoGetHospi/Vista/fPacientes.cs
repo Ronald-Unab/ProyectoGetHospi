@@ -25,10 +25,6 @@ namespace ProyectoGetHospi.Vista
         {
             pacientesBindingSource.DataSource = mPaciente.Listado();
         }
-        private void btnRegresar_Click(object sender, EventArgs e)
-        {
-         
-        }
 
         private void fPacientes_Load(object sender, EventArgs e)
         {
@@ -63,6 +59,13 @@ namespace ProyectoGetHospi.Vista
         private void recargarDatosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Cargardatos();
+        }
+
+        private void btnRegresar_Click(object sender, EventArgs e)
+        {
+            fMenu M = new fMenu();
+            M.Show();
+            Hide();
         }
     }
 }

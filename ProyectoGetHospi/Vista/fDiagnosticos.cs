@@ -47,5 +47,6 @@ namespace ProyectoGetHospi.Vista
             EliminarD ED = new EliminarD();
             ED.Show();
         }
+
     }
 }

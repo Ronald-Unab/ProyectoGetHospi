@@ -78,6 +78,7 @@
             this.especialidadesDataGridView.Name = "especialidadesDataGridView";
             this.especialidadesDataGridView.Size = new System.Drawing.Size(554, 299);
             this.especialidadesDataGridView.TabIndex = 5;
+            
             // 
             // menuStrip1
             // 
