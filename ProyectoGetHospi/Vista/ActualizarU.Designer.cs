@@ -42,6 +42,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ActualizarU));
             this.dgvUsuariosA = new System.Windows.Forms.DataGridView();
+            this.usuariosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.idUsuarioTextBox = new System.Windows.Forms.TextBox();
             this.claveTextBox = new System.Windows.Forms.TextBox();
@@ -54,14 +55,6 @@
             this.button1 = new System.Windows.Forms.Button();
             this.btnGuardarU = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.usuariosBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.idUsuarioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nombreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.direcciónDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dUIDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nITDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.usuarioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fechaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             claveLabel = new System.Windows.Forms.Label();
             dUILabel = new System.Windows.Forms.Label();
             fechaLabel = new System.Windows.Forms.Label();
@@ -71,8 +64,8 @@
             direcciónLabel = new System.Windows.Forms.Label();
             idUsuarioLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUsuariosA)).BeginInit();
-            this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.usuariosBindingSource)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // claveLabel
@@ -175,14 +168,6 @@
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvUsuariosA.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvUsuariosA.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvUsuariosA.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idUsuarioDataGridViewTextBoxColumn,
-            this.nombreDataGridViewTextBoxColumn,
-            this.direcciónDataGridViewTextBoxColumn,
-            this.dUIDataGridViewTextBoxColumn,
-            this.nITDataGridViewTextBoxColumn,
-            this.usuarioDataGridViewTextBoxColumn,
-            this.fechaDataGridViewTextBoxColumn});
             this.dgvUsuariosA.Cursor = System.Windows.Forms.Cursors.No;
             this.dgvUsuariosA.DataSource = this.usuariosBindingSource;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -194,7 +179,7 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvUsuariosA.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvUsuariosA.EnableHeadersVisualStyles = false;
-            this.dgvUsuariosA.Location = new System.Drawing.Point(16, 70);
+            this.dgvUsuariosA.Location = new System.Drawing.Point(35, 45);
             this.dgvUsuariosA.Name = "dgvUsuariosA";
             this.dgvUsuariosA.ReadOnly = true;
             this.dgvUsuariosA.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -227,9 +212,9 @@
             this.groupBox1.Controls.Add(this.nombreTextBox);
             this.groupBox1.Controls.Add(usuarioLabel);
             this.groupBox1.Controls.Add(this.usuarioTextBox);
-            this.groupBox1.Location = new System.Drawing.Point(485, 85);
+            this.groupBox1.Location = new System.Drawing.Point(513, 70);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(363, 255);
+            this.groupBox1.Size = new System.Drawing.Size(328, 246);
             this.groupBox1.TabIndex = 17;
             this.groupBox1.TabStop = false;
             // 
@@ -239,7 +224,7 @@
             this.idUsuarioTextBox.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.idUsuarioTextBox.Location = new System.Drawing.Point(106, 211);
             this.idUsuarioTextBox.Name = "idUsuarioTextBox";
-            this.idUsuarioTextBox.Size = new System.Drawing.Size(219, 19);
+            this.idUsuarioTextBox.Size = new System.Drawing.Size(193, 19);
             this.idUsuarioTextBox.TabIndex = 30;
             // 
             // claveTextBox
@@ -249,7 +234,7 @@
             this.claveTextBox.Location = new System.Drawing.Point(106, 29);
             this.claveTextBox.Name = "claveTextBox";
             this.claveTextBox.PasswordChar = '*';
-            this.claveTextBox.Size = new System.Drawing.Size(219, 19);
+            this.claveTextBox.Size = new System.Drawing.Size(193, 19);
             this.claveTextBox.TabIndex = 17;
             // 
             // direcciónTextBox
@@ -258,7 +243,7 @@
             this.direcciónTextBox.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.direcciónTextBox.Location = new System.Drawing.Point(106, 55);
             this.direcciónTextBox.Name = "direcciónTextBox";
-            this.direcciónTextBox.Size = new System.Drawing.Size(219, 19);
+            this.direcciónTextBox.Size = new System.Drawing.Size(193, 19);
             this.direcciónTextBox.TabIndex = 19;
             // 
             // dUITextBox
@@ -267,7 +252,7 @@
             this.dUITextBox.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dUITextBox.Location = new System.Drawing.Point(106, 81);
             this.dUITextBox.Name = "dUITextBox";
-            this.dUITextBox.Size = new System.Drawing.Size(219, 19);
+            this.dUITextBox.Size = new System.Drawing.Size(193, 19);
             this.dUITextBox.TabIndex = 21;
             // 
             // fechaDateTimePicker
@@ -276,7 +261,7 @@
             this.fechaDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.fechaDateTimePicker.Location = new System.Drawing.Point(106, 107);
             this.fechaDateTimePicker.Name = "fechaDateTimePicker";
-            this.fechaDateTimePicker.Size = new System.Drawing.Size(219, 22);
+            this.fechaDateTimePicker.Size = new System.Drawing.Size(193, 22);
             this.fechaDateTimePicker.TabIndex = 23;
             this.fechaDateTimePicker.Value = new System.DateTime(2020, 6, 23, 4, 2, 24, 0);
             // 
@@ -286,7 +271,7 @@
             this.nITTextBox.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nITTextBox.Location = new System.Drawing.Point(106, 133);
             this.nITTextBox.Name = "nITTextBox";
-            this.nITTextBox.Size = new System.Drawing.Size(219, 19);
+            this.nITTextBox.Size = new System.Drawing.Size(193, 19);
             this.nITTextBox.TabIndex = 25;
             // 
             // nombreTextBox
@@ -295,7 +280,7 @@
             this.nombreTextBox.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nombreTextBox.Location = new System.Drawing.Point(106, 159);
             this.nombreTextBox.Name = "nombreTextBox";
-            this.nombreTextBox.Size = new System.Drawing.Size(219, 19);
+            this.nombreTextBox.Size = new System.Drawing.Size(193, 19);
             this.nombreTextBox.TabIndex = 27;
             // 
             // usuarioTextBox
@@ -304,7 +289,7 @@
             this.usuarioTextBox.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.usuarioTextBox.Location = new System.Drawing.Point(106, 185);
             this.usuarioTextBox.Name = "usuarioTextBox";
-            this.usuarioTextBox.Size = new System.Drawing.Size(219, 19);
+            this.usuarioTextBox.Size = new System.Drawing.Size(193, 19);
             this.usuarioTextBox.TabIndex = 29;
             // 
             // button1
@@ -315,9 +300,9 @@
             this.button1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(158, 367);
+            this.button1.Location = new System.Drawing.Point(198, 334);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(114, 33);
+            this.button1.Size = new System.Drawing.Size(105, 33);
             this.button1.TabIndex = 18;
             this.button1.Text = "Selecionar";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -332,7 +317,7 @@
             this.btnGuardarU.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardarU.Image = ((System.Drawing.Image)(resources.GetObject("btnGuardarU.Image")));
             this.btnGuardarU.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnGuardarU.Location = new System.Drawing.Point(621, 367);
+            this.btnGuardarU.Location = new System.Drawing.Point(619, 334);
             this.btnGuardarU.Name = "btnGuardarU";
             this.btnGuardarU.Size = new System.Drawing.Size(99, 33);
             this.btnGuardarU.TabIndex = 19;
@@ -345,84 +330,32 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(587, 60);
+            this.label1.Location = new System.Drawing.Point(597, 45);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(172, 22);
             this.label1.TabIndex = 20;
             this.label1.Text = "Actualizar Usuario";
-            // 
-            // usuariosBindingSource
-            // 
-            //this.usuariosBindingSource.DataSource = typeof(ProyectoGetHospi.Entidades.Usuarios);
-            // 
-            // idUsuarioDataGridViewTextBoxColumn
-            // 
-            this.idUsuarioDataGridViewTextBoxColumn.DataPropertyName = "IdUsuario";
-            this.idUsuarioDataGridViewTextBoxColumn.HeaderText = "IdUsuario";
-            this.idUsuarioDataGridViewTextBoxColumn.Name = "idUsuarioDataGridViewTextBoxColumn";
-            this.idUsuarioDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // nombreDataGridViewTextBoxColumn
-            // 
-            this.nombreDataGridViewTextBoxColumn.DataPropertyName = "Nombre";
-            this.nombreDataGridViewTextBoxColumn.HeaderText = "Nombre";
-            this.nombreDataGridViewTextBoxColumn.Name = "nombreDataGridViewTextBoxColumn";
-            this.nombreDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // direcciónDataGridViewTextBoxColumn
-            // 
-            this.direcciónDataGridViewTextBoxColumn.DataPropertyName = "Dirección";
-            this.direcciónDataGridViewTextBoxColumn.HeaderText = "Dirección";
-            this.direcciónDataGridViewTextBoxColumn.Name = "direcciónDataGridViewTextBoxColumn";
-            this.direcciónDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // dUIDataGridViewTextBoxColumn
-            // 
-            this.dUIDataGridViewTextBoxColumn.DataPropertyName = "DUI";
-            this.dUIDataGridViewTextBoxColumn.HeaderText = "DUI";
-            this.dUIDataGridViewTextBoxColumn.Name = "dUIDataGridViewTextBoxColumn";
-            this.dUIDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // nITDataGridViewTextBoxColumn
-            // 
-            this.nITDataGridViewTextBoxColumn.DataPropertyName = "NIT";
-            this.nITDataGridViewTextBoxColumn.HeaderText = "NIT";
-            this.nITDataGridViewTextBoxColumn.Name = "nITDataGridViewTextBoxColumn";
-            this.nITDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // usuarioDataGridViewTextBoxColumn
-            // 
-            this.usuarioDataGridViewTextBoxColumn.DataPropertyName = "Usuario";
-            this.usuarioDataGridViewTextBoxColumn.HeaderText = "Usuario";
-            this.usuarioDataGridViewTextBoxColumn.Name = "usuarioDataGridViewTextBoxColumn";
-            this.usuarioDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // fechaDataGridViewTextBoxColumn
-            // 
-            this.fechaDataGridViewTextBoxColumn.DataPropertyName = "Fecha";
-            this.fechaDataGridViewTextBoxColumn.HeaderText = "Fecha";
-            this.fechaDataGridViewTextBoxColumn.Name = "fechaDataGridViewTextBoxColumn";
-            this.fechaDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // ActualizarU
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(231)))), ((int)(((byte)(159)))));
-            this.ClientSize = new System.Drawing.Size(873, 434);
+            this.ClientSize = new System.Drawing.Size(863, 388);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnGuardarU);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dgvUsuariosA);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "ActualizarU";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Actualizar Usuario";
             this.Load += new System.EventHandler(this.ActualizarU_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvUsuariosA)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.usuariosBindingSource)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.usuariosBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -45,11 +45,11 @@
             this.btnEliminar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminar.Image = ((System.Drawing.Image)(resources.GetObject("btnEliminar.Image")));
             this.btnEliminar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEliminar.Location = new System.Drawing.Point(459, 278);
+            this.btnEliminar.Location = new System.Drawing.Point(434, 276);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(157, 29);
+            this.btnEliminar.Size = new System.Drawing.Size(182, 29);
             this.btnEliminar.TabIndex = 2;
-            this.btnEliminar.Text = "Eliminar Seleccion";
+            this.btnEliminar.Text = "Eliminar Seleccionado";
             this.btnEliminar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnEliminar.UseVisualStyleBackColor = false;
             // 
@@ -57,6 +57,7 @@
             // 
             this.archivoDataGridView.AutoGenerateColumns = false;
             this.archivoDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.archivoDataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(249)))), ((int)(((byte)(231)))));
             this.archivoDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.archivoDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.archivoDataGridView.DataSource = this.archivoBindingSource;
@@ -73,7 +74,7 @@
             this.ClientSize = new System.Drawing.Size(653, 326);
             this.Controls.Add(this.archivoDataGridView);
             this.Controls.Add(this.btnEliminar);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "EliminarA";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Eliminar";

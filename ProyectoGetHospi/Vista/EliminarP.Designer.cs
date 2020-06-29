@@ -47,10 +47,10 @@
             this.pacientesDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.pacientesDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.pacientesDataGridView.DataSource = this.pacientesBindingSource;
-            this.pacientesDataGridView.Location = new System.Drawing.Point(34, 39);
+            this.pacientesDataGridView.Location = new System.Drawing.Point(41, 48);
             this.pacientesDataGridView.Name = "pacientesDataGridView";
             this.pacientesDataGridView.ReadOnly = true;
-            this.pacientesDataGridView.Size = new System.Drawing.Size(560, 228);
+            this.pacientesDataGridView.Size = new System.Drawing.Size(575, 212);
             this.pacientesDataGridView.TabIndex = 1;
             // 
             // btnEliminarP
@@ -61,9 +61,9 @@
             this.btnEliminarP.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminarP.Image = ((System.Drawing.Image)(resources.GetObject("btnEliminarP.Image")));
             this.btnEliminarP.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEliminarP.Location = new System.Drawing.Point(413, 283);
+            this.btnEliminarP.Location = new System.Drawing.Point(434, 276);
             this.btnEliminarP.Name = "btnEliminarP";
-            this.btnEliminarP.Size = new System.Drawing.Size(181, 34);
+            this.btnEliminarP.Size = new System.Drawing.Size(182, 29);
             this.btnEliminarP.TabIndex = 2;
             this.btnEliminarP.Text = "Eliminar Seleccionado";
             this.btnEliminarP.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -75,7 +75,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(231)))), ((int)(((byte)(159)))));
-            this.ClientSize = new System.Drawing.Size(633, 329);
+            this.ClientSize = new System.Drawing.Size(653, 326);
             this.Controls.Add(this.btnEliminarP);
             this.Controls.Add(this.pacientesDataGridView);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;

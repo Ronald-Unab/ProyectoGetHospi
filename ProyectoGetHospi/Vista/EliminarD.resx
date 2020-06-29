@@ -120,4 +120,20 @@
   <metadata name="diagnosticosBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <metadata name="diagnosticosBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="button1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAAOkAAADpAVSSFEsAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwa
+        AAABQklEQVRIS7XVvUpDQRQE4CEgGPAJTJPCh7AR8gRWGoKVpT9gY+MTiKXWKewsBG3ttbCwsVdErBTF
+        QgsLi+uc61043DmEXYkLHySzmQkXAkFVVRPxrNE92RvvgVaijheGCc8svdEZrbec0wvNRN0kDBOePtmL
+        QXA3aO767TvPTpeu6TnwSvapd5clltmdfaZ9Z2yzm75lRHtTNqq3/eP8hzCcJg2ATfeYpbZkTwLghuzF
+        X9zKngS/v29fKnEhexIAh65Q6lj2JAB2XaHUvuxJAAxdodSO7EkALLpCqVXZkwDouUKpJdmTAOjQd1Mo
+        tSB77aAOgUdXKjEnW+2gDoErV8r1GW6FIXDiirnuwq0wBA5cMddluBWGwLYr5joNt8IQWHbFXEfhVhgC
+        8/TVFHPV/2CyFYWGZ4OemvIkHzSmju5U+AHMt/xcfyzirAAAAABJRU5ErkJggg==
+</value>
+  </data>
 </root>
