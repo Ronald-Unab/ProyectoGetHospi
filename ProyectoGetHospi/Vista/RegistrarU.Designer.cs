@@ -39,6 +39,7 @@
             this.btnGuardar = new System.Windows.Forms.Button();
             this.grbRegistrar = new System.Windows.Forms.GroupBox();
             this.fechaDateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.usuariobindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.claveTextBox = new System.Windows.Forms.TextBox();
             this.direcciónTextBox = new System.Windows.Forms.TextBox();
             this.dUITextBox = new System.Windows.Forms.TextBox();
@@ -46,7 +47,6 @@
             this.nombreTextBox = new System.Windows.Forms.TextBox();
             this.usuarioTextBox = new System.Windows.Forms.TextBox();
             this.btnNuevo = new System.Windows.Forms.Button();
-            this.usuariobindingSource = new System.Windows.Forms.BindingSource(this.components);
             claveLabel = new System.Windows.Forms.Label();
             direcciónLabel = new System.Windows.Forms.Label();
             dUILabel = new System.Windows.Forms.Label();
@@ -221,14 +221,11 @@
             this.btnNuevo.UseVisualStyleBackColor = true;
             this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
-            // usuariobindingSource
-            // 
-            //this.usuariobindingSource.DataSource = typeof(ProyectoGetHospi.Entidades.Usuarios);
-            // 
             // RegistrarU
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(231)))), ((int)(((byte)(159)))));
             this.ClientSize = new System.Drawing.Size(373, 391);
             this.Controls.Add(this.btnNuevo);
             this.Controls.Add(this.btnGuardar);
