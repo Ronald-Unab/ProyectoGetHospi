@@ -31,8 +31,18 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EliminarP));
             this.pacientesDataGridView = new System.Windows.Forms.DataGridView();
-            this.pacientesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.btnEliminarP = new System.Windows.Forms.Button();
+            this.pacientesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.cédulaPacienteDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.numRegistroDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nombreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.direcciónDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.telefonoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fechaNcimientoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sexoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nombrePadreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nombreMadreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.grupoSanguineoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.pacientesDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pacientesBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -46,6 +56,17 @@
             this.pacientesDataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(249)))), ((int)(((byte)(231)))));
             this.pacientesDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.pacientesDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.pacientesDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.cédulaPacienteDataGridViewTextBoxColumn,
+            this.numRegistroDataGridViewTextBoxColumn,
+            this.nombreDataGridViewTextBoxColumn,
+            this.direcciónDataGridViewTextBoxColumn,
+            this.telefonoDataGridViewTextBoxColumn,
+            this.fechaNcimientoDataGridViewTextBoxColumn,
+            this.sexoDataGridViewTextBoxColumn,
+            this.nombrePadreDataGridViewTextBoxColumn,
+            this.nombreMadreDataGridViewTextBoxColumn,
+            this.grupoSanguineoDataGridViewTextBoxColumn});
             this.pacientesDataGridView.DataSource = this.pacientesBindingSource;
             this.pacientesDataGridView.Location = new System.Drawing.Point(34, 39);
             this.pacientesDataGridView.Name = "pacientesDataGridView";
@@ -70,6 +91,80 @@
             this.btnEliminarP.UseVisualStyleBackColor = false;
             this.btnEliminarP.Click += new System.EventHandler(this.btnEliminarP_Click);
             // 
+            // pacientesBindingSource
+            // 
+            this.pacientesBindingSource.DataSource = typeof(ProyectoGetHospi.Entidades.Pacientes);
+            // 
+            // cédulaPacienteDataGridViewTextBoxColumn
+            // 
+            this.cédulaPacienteDataGridViewTextBoxColumn.DataPropertyName = "CédulaPaciente";
+            this.cédulaPacienteDataGridViewTextBoxColumn.HeaderText = "CédulaPaciente";
+            this.cédulaPacienteDataGridViewTextBoxColumn.Name = "cédulaPacienteDataGridViewTextBoxColumn";
+            this.cédulaPacienteDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // numRegistroDataGridViewTextBoxColumn
+            // 
+            this.numRegistroDataGridViewTextBoxColumn.DataPropertyName = "NumRegistro";
+            this.numRegistroDataGridViewTextBoxColumn.HeaderText = "NumRegistro";
+            this.numRegistroDataGridViewTextBoxColumn.Name = "numRegistroDataGridViewTextBoxColumn";
+            this.numRegistroDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // nombreDataGridViewTextBoxColumn
+            // 
+            this.nombreDataGridViewTextBoxColumn.DataPropertyName = "Nombre";
+            this.nombreDataGridViewTextBoxColumn.HeaderText = "Nombre";
+            this.nombreDataGridViewTextBoxColumn.Name = "nombreDataGridViewTextBoxColumn";
+            this.nombreDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // direcciónDataGridViewTextBoxColumn
+            // 
+            this.direcciónDataGridViewTextBoxColumn.DataPropertyName = "Dirección";
+            this.direcciónDataGridViewTextBoxColumn.HeaderText = "Dirección";
+            this.direcciónDataGridViewTextBoxColumn.Name = "direcciónDataGridViewTextBoxColumn";
+            this.direcciónDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // telefonoDataGridViewTextBoxColumn
+            // 
+            this.telefonoDataGridViewTextBoxColumn.DataPropertyName = "Telefono";
+            this.telefonoDataGridViewTextBoxColumn.HeaderText = "Telefono";
+            this.telefonoDataGridViewTextBoxColumn.Name = "telefonoDataGridViewTextBoxColumn";
+            this.telefonoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // fechaNcimientoDataGridViewTextBoxColumn
+            // 
+            this.fechaNcimientoDataGridViewTextBoxColumn.DataPropertyName = "FechaNcimiento";
+            this.fechaNcimientoDataGridViewTextBoxColumn.HeaderText = "FechaNcimiento";
+            this.fechaNcimientoDataGridViewTextBoxColumn.Name = "fechaNcimientoDataGridViewTextBoxColumn";
+            this.fechaNcimientoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // sexoDataGridViewTextBoxColumn
+            // 
+            this.sexoDataGridViewTextBoxColumn.DataPropertyName = "Sexo";
+            this.sexoDataGridViewTextBoxColumn.HeaderText = "Sexo";
+            this.sexoDataGridViewTextBoxColumn.Name = "sexoDataGridViewTextBoxColumn";
+            this.sexoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // nombrePadreDataGridViewTextBoxColumn
+            // 
+            this.nombrePadreDataGridViewTextBoxColumn.DataPropertyName = "NombrePadre";
+            this.nombrePadreDataGridViewTextBoxColumn.HeaderText = "NombrePadre";
+            this.nombrePadreDataGridViewTextBoxColumn.Name = "nombrePadreDataGridViewTextBoxColumn";
+            this.nombrePadreDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // nombreMadreDataGridViewTextBoxColumn
+            // 
+            this.nombreMadreDataGridViewTextBoxColumn.DataPropertyName = "NombreMadre";
+            this.nombreMadreDataGridViewTextBoxColumn.HeaderText = "NombreMadre";
+            this.nombreMadreDataGridViewTextBoxColumn.Name = "nombreMadreDataGridViewTextBoxColumn";
+            this.nombreMadreDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // grupoSanguineoDataGridViewTextBoxColumn
+            // 
+            this.grupoSanguineoDataGridViewTextBoxColumn.DataPropertyName = "GrupoSanguineo";
+            this.grupoSanguineoDataGridViewTextBoxColumn.HeaderText = "GrupoSanguineo";
+            this.grupoSanguineoDataGridViewTextBoxColumn.Name = "grupoSanguineoDataGridViewTextBoxColumn";
+            this.grupoSanguineoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
             // EliminarP
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -90,8 +185,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.BindingSource pacientesBindingSource;
         private System.Windows.Forms.DataGridView pacientesDataGridView;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
@@ -105,5 +198,16 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
         private System.Windows.Forms.Button btnEliminarP;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cédulaPacienteDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn numRegistroDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nombreDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn direcciónDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn telefonoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fechaNcimientoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sexoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nombrePadreDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nombreMadreDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn grupoSanguineoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.BindingSource pacientesBindingSource;
     }
 }

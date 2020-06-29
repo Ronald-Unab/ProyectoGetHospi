@@ -42,14 +42,18 @@ namespace ProyectoGetHospi.Vista
 
         private void btnGuardarMed_Click(object sender, EventArgs e)
         {
-            btnSeleccionMed.Enabled = true;
-            btnGuardarMed.Enabled = false;
-            médicoBindingSource.EndEdit();
-            Médico M = new Médico();
-            M = (Médico)médicoBindingSource.Current;
-            cMedico.Actualizar(M);
-            MessageBox.Show("Se han actualizado los datos del medico");
-            this.Close();
+            try
+            {
+                btnSeleccionMed.Enabled = true;
+                btnGuardarMed.Enabled = false;
+                médicoBindingSource.EndEdit();
+                Médico M = new Médico();
+                M = (Médico)médicoBindingSource.Current;
+                cMedico.Actualizar(M);
+                MessageBox.Show("Se han actualizado los datos del medico");
+                this.Close();
+            }
+            catch { }
         }
     }
 }

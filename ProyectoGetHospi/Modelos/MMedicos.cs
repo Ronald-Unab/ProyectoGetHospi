@@ -16,6 +16,7 @@ namespace ProyectoGetHospi.Modelos
             IDbConnection cn = Conexion.Conexion.Conectar();
             cn.Open();
             DynamicParameters parametro = new DynamicParameters();
+            parametro.Add("@IdMedico", m.IdMedico, DbType.Int32);
             parametro.Add("@Nombre", m.Nombre, DbType.String);
             parametro.Add("@Direccion", m.Direccion, DbType.String);
             parametro.Add("@DUI", m.DUI, DbType.String);
@@ -29,8 +30,8 @@ namespace ProyectoGetHospi.Modelos
         {
             IDbConnection cn = Conexion.Conexion.Conectar();
             cn.Open();
-
             DynamicParameters parametro = new DynamicParameters();
+            parametro.Add("@IdMedico", m.IdMedico, DbType.Int32);
             parametro.Add("@Nombre", m.Nombre, DbType.String);
             parametro.Add("@Direccion", m.Direccion, DbType.String);
             parametro.Add("@DUI", m.DUI, DbType.String);
