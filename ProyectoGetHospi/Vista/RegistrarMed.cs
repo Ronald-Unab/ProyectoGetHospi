@@ -26,7 +26,17 @@ namespace ProyectoGetHospi.Vista
             grbMed.Enabled = false;
         }
 
-        private void btnGuardarMed_Click(object sender, EventArgs e)
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            médicoBindingSource.MoveLast();
+            médicoBindingSource.AddNew();
+            grbMed.Enabled = true;
+            btnGuardarMed.Enabled = true;
+            btnNuevoMed.Enabled = false;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
         {
             médicoBindingSource.EndEdit();
             Médico M = new Médico();
@@ -38,15 +48,6 @@ namespace ProyectoGetHospi.Vista
             grbMed.Enabled = false;
             btnGuardarMed.Enabled = false;
             MessageBox.Show("Se ha registrado con exito al nuevo medico");
-        }
-
-        private void btnNuevoMed_Click(object sender, EventArgs e)
-        {
-            médicoBindingSource.MoveLast();
-            médicoBindingSource.AddNew();
-            grbMed.Enabled = true;
-            btnGuardarMed.Enabled = true;
-            btnNuevoMed.Enabled = false;
         }
     }
 }
