@@ -39,8 +39,8 @@ namespace ProyectoGetHospi.Vista
 
         private void registrarNuevoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            RegistrarU RU = new RegistrarU();
-            RU.Show();
+            RegistrarU registrarU = new RegistrarU();
+            registrarU.Show();
         }
 
         private void btnRecargarU_Click(object sender, EventArgs e)

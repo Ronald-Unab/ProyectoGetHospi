@@ -27,7 +27,7 @@ namespace ProyectoGetHospi.Vista
 
         private void fDiagnosticos_Load(object sender, EventArgs e)
         {
-            diagnosticosBindingSource.DataSource = mDiagnosticos.Listado();
+            diagnosticoBindingSource.DataSource = mDiagnosticos.Listado();
         }
 
         private void nuevoDiagnosticoToolStripMenuItem_Click(object sender, EventArgs e)

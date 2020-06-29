@@ -21,13 +21,23 @@ namespace ProyectoGetHospi.Modelos
             parametro.Add("@PresionArterial", a.PresionArterial, DbType.String);
             parametro.Add("@Temperatura", a.Temperatura, DbType.String);
             parametro.Add("@IdPaciente", a.IdPaciente, DbType.String);
-
+            cn.Execute("sp_insert_Archivo", parametro, commandType: CommandType.StoredProcedure);
             cn.Close();
         }
 
         public void Actualizar(Archivo a)
         {
 
+            IDbConnection cn = Conexion.Conexion.Conectar();
+            cn.Open();
+
+            DynamicParameters parametro = new DynamicParameters();
+            parametro.Add("@Peso", a.Peso, DbType.String);
+            parametro.Add("@PresionArterial", a.PresionArterial, DbType.String);
+            parametro.Add("@Temperatura", a.Temperatura, DbType.String);
+            parametro.Add("@IdPaciente", a.IdPaciente, DbType.String);
+            cn.Execute("sp_update_Archivo", parametro, commandType: CommandType.StoredProcedure);
+            cn.Close();
         }
 
         public List<Archivo> Listado()

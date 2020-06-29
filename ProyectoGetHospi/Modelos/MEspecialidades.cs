@@ -19,13 +19,20 @@ namespace ProyectoGetHospi.Modelos
             DynamicParameters parametro = new DynamicParameters();
             parametro.Add("@Nombre", e.Nombre, DbType.String);
             parametro.Add("@IdMedico", e.idMedico, DbType.Int32);
-            cn.Execute("sp_Select_Especialidades", parametro, commandType: CommandType.StoredProcedure);
+            cn.Execute("sp_insert_Especialidades", parametro, commandType: CommandType.StoredProcedure);
             cn.Close();
         }
 
         public void Actualizar (Especialidades e)
         {
+            IDbConnection cn = Conexion.Conexion.Conectar();
+            cn.Open();
 
+            DynamicParameters parametro = new DynamicParameters();
+            parametro.Add("@Nombre", e.Nombre, DbType.String);
+            parametro.Add("@IdMedico", e.idMedico, DbType.Int32);
+            cn.Execute("sp_update_Especialidades", parametro, commandType: CommandType.StoredProcedure);
+            cn.Close();
         }
 
         public List<Especialidades> Listado()

@@ -32,7 +32,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fDiagnosticos));
             this.btnRegresar = new System.Windows.Forms.Button();
             this.diagnosticosDataGridView = new System.Windows.Forms.DataGridView();
-            this.diagnosticosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.opcionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nuevoDiagnosticoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -40,13 +39,18 @@
             this.eliminarDiagnosticoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.recargarDatosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.diagnosticoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.diagnosticosDataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.diagnosticosBindingSource)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.diagnosticoBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // btnRegresar
@@ -68,18 +72,26 @@
             // 
             // diagnosticosDataGridView
             // 
+            this.diagnosticosDataGridView.AllowUserToAddRows = false;
+            this.diagnosticosDataGridView.AllowUserToDeleteRows = false;
             this.diagnosticosDataGridView.AutoGenerateColumns = false;
             this.diagnosticosDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.diagnosticosDataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(249)))), ((int)(((byte)(231)))));
             this.diagnosticosDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.diagnosticosDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.diagnosticosDataGridView.DataSource = this.diagnosticosBindingSource;
+            this.diagnosticosDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn6,
+            this.dataGridViewTextBoxColumn7,
+            this.dataGridViewTextBoxColumn8});
+            this.diagnosticosDataGridView.DataSource = this.diagnosticoBindingSource;
             this.diagnosticosDataGridView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(249)))), ((int)(((byte)(231)))));
             this.diagnosticosDataGridView.Location = new System.Drawing.Point(207, 46);
             this.diagnosticosDataGridView.Name = "diagnosticosDataGridView";
+            this.diagnosticosDataGridView.ReadOnly = true;
             this.diagnosticosDataGridView.Size = new System.Drawing.Size(554, 299);
             this.diagnosticosDataGridView.TabIndex = 4;
-            //
+            // 
             // menuStrip1
             // 
             this.menuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(208)))), ((int)(((byte)(63)))));
@@ -153,15 +165,6 @@
             this.panel1.Size = new System.Drawing.Size(181, 400);
             this.panel1.TabIndex = 6;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(24, 49);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(133, 133);
-            this.pictureBox1.TabIndex = 6;
-            this.pictureBox1.TabStop = false;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -171,6 +174,47 @@
             this.label1.Size = new System.Drawing.Size(118, 22);
             this.label1.TabIndex = 9;
             this.label1.Text = "Diagnostico";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(24, 49);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(133, 133);
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
+            // 
+            // diagnosticoBindingSource
+            // 
+            this.diagnosticoBindingSource.DataSource = typeof(ProyectoGetHospi.Entidades.Diagnosticos);
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "IdDiagnostico";
+            this.dataGridViewTextBoxColumn5.HeaderText = "IdDiagnostico";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "Diagnostico";
+            this.dataGridViewTextBoxColumn6.HeaderText = "Diagnostico";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.dataGridViewTextBoxColumn6.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "Recetas";
+            this.dataGridViewTextBoxColumn7.HeaderText = "Recetas";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            this.dataGridViewTextBoxColumn7.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.DataPropertyName = "IdConsulta";
+            this.dataGridViewTextBoxColumn8.HeaderText = "IdConsulta";
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            this.dataGridViewTextBoxColumn8.ReadOnly = true;
             // 
             // fDiagnosticos
             // 
@@ -188,12 +232,12 @@
             this.Text = "Diagnosticos";
             this.Load += new System.EventHandler(this.fDiagnosticos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.diagnosticosDataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.diagnosticosBindingSource)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.diagnosticoBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -204,7 +248,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn recetasDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn idConsultaDataGridViewTextBoxColumn;
         private System.Windows.Forms.Button btnRegresar;
-        private System.Windows.Forms.BindingSource diagnosticosBindingSource;
         private System.Windows.Forms.DataGridView diagnosticosDataGridView;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
@@ -219,5 +262,10 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
+        private System.Windows.Forms.BindingSource diagnosticoBindingSource;
     }
 }

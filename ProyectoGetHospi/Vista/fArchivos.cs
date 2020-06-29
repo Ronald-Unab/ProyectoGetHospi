@@ -20,7 +20,7 @@ namespace ProyectoGetHospi.Vista
         MArchivos mArchivos = new MArchivos();
         public void cargardatos() 
         {
-            archivoBindingSource.DataSource = mArchivos.Listado();
+            archivosBindingSource.DataSource = mArchivos.Listado();
 
         }
         private void fArchivos_Load(object sender, EventArgs e)

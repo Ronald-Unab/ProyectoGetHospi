@@ -35,7 +35,7 @@ namespace ProyectoGetHospi.Vista
             btnNuevo.Enabled = true;
             grbRegistrar.Enabled = false;
             btnGuardar.Enabled = false;
-            Fu.usuariosBindingSource.DataSource = mUsuarios.Listado();
+            //Fu.usuariosBindingSource.DataSource = mUsuarios.Listado();
             MessageBox.Show("Se ha registrado con exito al nuevo usuario");
             
         }

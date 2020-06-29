@@ -20,7 +20,7 @@ namespace ProyectoGetHospi.Controladores
 
         public void Actualizar(Especialidades e)
         {
-
+            mespecialidades.Actualizar(e);
         }
 
         public List<Especialidades> Listado()
@@ -30,7 +30,7 @@ namespace ProyectoGetHospi.Controladores
 
         public void Eliminar(int id)
         {
-
+            mespecialidades.Eliminar(id);
         }
     }
 }

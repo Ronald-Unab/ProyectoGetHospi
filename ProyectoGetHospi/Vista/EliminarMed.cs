@@ -19,7 +19,7 @@ namespace ProyectoGetHospi.Vista
         CMedicos cMedico = new CMedicos();
         public void cargardatos()
         {
-            médicoBindingSource.DataSource = cMedico.Listado();
+            medicoBindingSource.DataSource = cMedico.Listado();
         }
         private void EliminarMed_Load(object sender, EventArgs e)
         {
@@ -31,7 +31,7 @@ namespace ProyectoGetHospi.Vista
             string Id = dgvMedE.CurrentRow.Cells[0].Value.ToString();
             cMedico.Eliminar(Convert.ToInt32(Id));
             MessageBox.Show("Se ha eliminado al medico");
-            médicoBindingSource.DataSource = cMedico.Listado();
+            medicoBindingSource.DataSource = cMedico.Listado();
         }
     }
 }

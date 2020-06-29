@@ -20,7 +20,7 @@ namespace ProyectoGetHospi.Controladores
 
         public void Actualizar(Consultas c)
         {
-
+            mconsultas.Actualizar(c);
         }
 
         public List<Consultas> Listado()
@@ -30,7 +30,7 @@ namespace ProyectoGetHospi.Controladores
 
         public void Eliminar(int id)
         {
-
+            mconsultas.Eliminar(id);
         }
     }
 }

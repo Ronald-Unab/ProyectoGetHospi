@@ -32,7 +32,21 @@ namespace ProyectoGetHospi.Modelos
 
         public void Actualizar(Pacientes p)
         {
-
+            IDbConnection cn = Conexion.Conexion.Conectar();
+            cn.Open();
+            DynamicParameters parametro = new DynamicParameters();
+            parametro.Add("@Nombre", p.Nombre, DbType.String);
+            parametro.Add("@Direccion", p.Dirección, DbType.String);
+            parametro.Add("@Telefono", p.Telefono, DbType.String);
+            parametro.Add("@FechaNacimiento", p.FechaNcimiento, DbType.DateTime);
+            parametro.Add("@Sexo", p.Sexo, DbType.String);
+            parametro.Add("@CedulaPaciente", p.CédulaPaciente, DbType.Int32);
+            parametro.Add("@NumeroRegistro", p.NumRegistro, DbType.Int32);
+            parametro.Add("@NombrePadre", p.NombrePadre, DbType.String);
+            parametro.Add("@NombreMadre", p.NombreMadre, DbType.String);
+            parametro.Add("@GrupoSanguineo", p.GrupoSanguineo, DbType.String);
+            cn.Execute("sp_update_Pacientes", parametro, commandType: CommandType.StoredProcedure);
+            cn.Close();
         }
 
         public List<Pacientes> Listado()

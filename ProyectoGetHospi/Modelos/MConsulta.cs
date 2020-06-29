@@ -20,13 +20,20 @@ namespace ProyectoGetHospi.Modelos
             parametro.Add("@Nombre", c.Nombre, DbType.String);
             parametro.Add("@IdMedico", c.IdMedico, DbType.Int32);
             parametro.Add("@IdArchivo", c.IdArchivo, DbType.Int32);
-            cn.Execute("sp_Select_Consultas", parametro, commandType: CommandType.StoredProcedure);
+            cn.Execute("sp_insert_Consultas", parametro, commandType: CommandType.StoredProcedure);
             cn.Close();
         }
 
         public void Actualizar(Consultas c)
         {
-
+            IDbConnection cn = Conexion.Conexion.Conectar();
+            cn.Open();
+            DynamicParameters parametro = new DynamicParameters();
+            parametro.Add("@Nombre", c.Nombre, DbType.String);
+            parametro.Add("@IdMedico", c.IdMedico, DbType.Int32);
+            parametro.Add("@IdArchivo", c.IdArchivo, DbType.Int32);
+            cn.Execute("sp_update_Consultas", parametro, commandType: CommandType.StoredProcedure);
+            cn.Close();
         }
 
         public List<Consultas> Listado()

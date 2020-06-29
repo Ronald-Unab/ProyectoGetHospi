@@ -29,26 +29,31 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ActualizarMed));
             System.Windows.Forms.Label cedulaMedicoLabel;
             System.Windows.Forms.Label direccionLabel;
             System.Windows.Forms.Label dUILabel;
             System.Windows.Forms.Label idMedicoLabel;
             System.Windows.Forms.Label nombreLabel;
             System.Windows.Forms.Label telefonoLabel;
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ActualizarMed));
             this.dgvMedA = new System.Windows.Forms.DataGridView();
-            this.IdMedico = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.médicoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.grbMedA = new System.Windows.Forms.GroupBox();
+            this.btnSeleccionMed = new System.Windows.Forms.Button();
+            this.btnGuardarMed = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.medicosBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.idMedicoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nombreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.direccionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dUIDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.telefonoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cedulaMedicoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cedulaMedicoTextBox = new System.Windows.Forms.TextBox();
             this.direccionTextBox = new System.Windows.Forms.TextBox();
             this.dUITextBox = new System.Windows.Forms.TextBox();
             this.idMedicoTextBox = new System.Windows.Forms.TextBox();
             this.nombreTextBox = new System.Windows.Forms.TextBox();
             this.telefonoTextBox = new System.Windows.Forms.TextBox();
-            this.btnSeleccionMed = new System.Windows.Forms.Button();
-            this.btnGuardarMed = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             cedulaMedicoLabel = new System.Windows.Forms.Label();
             direccionLabel = new System.Windows.Forms.Label();
             dUILabel = new System.Windows.Forms.Label();
@@ -56,69 +61,9 @@
             nombreLabel = new System.Windows.Forms.Label();
             telefonoLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMedA)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.médicoBindingSource)).BeginInit();
             this.grbMedA.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.medicosBindingSource)).BeginInit();
             this.SuspendLayout();
-            // 
-            // cedulaMedicoLabel
-            // 
-            cedulaMedicoLabel.AutoSize = true;
-            cedulaMedicoLabel.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            cedulaMedicoLabel.Location = new System.Drawing.Point(16, 67);
-            cedulaMedicoLabel.Name = "cedulaMedicoLabel";
-            cedulaMedicoLabel.Size = new System.Drawing.Size(129, 20);
-            cedulaMedicoLabel.TabIndex = 0;
-            cedulaMedicoLabel.Text = "Cédula Medico:";
-            // 
-            // direccionLabel
-            // 
-            direccionLabel.AutoSize = true;
-            direccionLabel.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            direccionLabel.Location = new System.Drawing.Point(16, 122);
-            direccionLabel.Name = "direccionLabel";
-            direccionLabel.Size = new System.Drawing.Size(84, 20);
-            direccionLabel.TabIndex = 2;
-            direccionLabel.Text = "Direccion:";
-            // 
-            // dUILabel
-            // 
-            dUILabel.AutoSize = true;
-            dUILabel.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dUILabel.Location = new System.Drawing.Point(16, 148);
-            dUILabel.Name = "dUILabel";
-            dUILabel.Size = new System.Drawing.Size(40, 20);
-            dUILabel.TabIndex = 4;
-            dUILabel.Text = "DUI:";
-            // 
-            // idMedicoLabel
-            // 
-            idMedicoLabel.AutoSize = true;
-            idMedicoLabel.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            idMedicoLabel.Location = new System.Drawing.Point(16, 37);
-            idMedicoLabel.Name = "idMedicoLabel";
-            idMedicoLabel.Size = new System.Drawing.Size(90, 20);
-            idMedicoLabel.TabIndex = 6;
-            idMedicoLabel.Text = "Id Medico:";
-            // 
-            // nombreLabel
-            // 
-            nombreLabel.AutoSize = true;
-            nombreLabel.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            nombreLabel.Location = new System.Drawing.Point(16, 95);
-            nombreLabel.Name = "nombreLabel";
-            nombreLabel.Size = new System.Drawing.Size(72, 20);
-            nombreLabel.TabIndex = 8;
-            nombreLabel.Text = "Nombre:";
-            // 
-            // telefonoLabel
-            // 
-            telefonoLabel.AutoSize = true;
-            telefonoLabel.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            telefonoLabel.Location = new System.Drawing.Point(16, 180);
-            telefonoLabel.Name = "telefonoLabel";
-            telefonoLabel.Size = new System.Drawing.Size(75, 20);
-            telefonoLabel.TabIndex = 10;
-            telefonoLabel.Text = "Telefono:";
             // 
             // dgvMedA
             // 
@@ -129,20 +74,18 @@
             this.dgvMedA.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvMedA.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvMedA.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.IdMedico});
-            this.dgvMedA.DataSource = this.médicoBindingSource;
+            this.idMedicoDataGridViewTextBoxColumn,
+            this.nombreDataGridViewTextBoxColumn,
+            this.direccionDataGridViewTextBoxColumn,
+            this.dUIDataGridViewTextBoxColumn,
+            this.telefonoDataGridViewTextBoxColumn,
+            this.cedulaMedicoDataGridViewTextBoxColumn});
+            this.dgvMedA.DataSource = this.medicosBindingSource;
             this.dgvMedA.Location = new System.Drawing.Point(35, 45);
             this.dgvMedA.Name = "dgvMedA";
             this.dgvMedA.ReadOnly = true;
             this.dgvMedA.Size = new System.Drawing.Size(450, 243);
             this.dgvMedA.TabIndex = 1;
-            // 
-            // IdMedico
-            // 
-            this.IdMedico.DataPropertyName = "IdMedico";
-            this.IdMedico.HeaderText = "IdMedico";
-            this.IdMedico.Name = "IdMedico";
-            this.IdMedico.ReadOnly = true;
             // 
             // grbMedA
             // 
@@ -151,8 +94,8 @@
             this.grbMedA.Controls.Add(direccionLabel);
             this.grbMedA.Controls.Add(this.direccionTextBox);
             this.grbMedA.Controls.Add(dUILabel);
-            this.grbMedA.Controls.Add(idMedicoLabel);
             this.grbMedA.Controls.Add(this.dUITextBox);
+            this.grbMedA.Controls.Add(idMedicoLabel);
             this.grbMedA.Controls.Add(this.idMedicoTextBox);
             this.grbMedA.Controls.Add(nombreLabel);
             this.grbMedA.Controls.Add(this.nombreTextBox);
@@ -163,66 +106,6 @@
             this.grbMedA.Size = new System.Drawing.Size(281, 214);
             this.grbMedA.TabIndex = 2;
             this.grbMedA.TabStop = false;
-            // 
-            // cedulaMedicoTextBox
-            // 
-            this.cedulaMedicoTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.cedulaMedicoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.médicoBindingSource, "CedulaMedico", true));
-            this.cedulaMedicoTextBox.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cedulaMedicoTextBox.Location = new System.Drawing.Point(155, 68);
-            this.cedulaMedicoTextBox.Name = "cedulaMedicoTextBox";
-            this.cedulaMedicoTextBox.Size = new System.Drawing.Size(100, 19);
-            this.cedulaMedicoTextBox.TabIndex = 1;
-            // 
-            // direccionTextBox
-            // 
-            this.direccionTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.direccionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.médicoBindingSource, "Direccion", true));
-            this.direccionTextBox.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.direccionTextBox.Location = new System.Drawing.Point(155, 122);
-            this.direccionTextBox.Name = "direccionTextBox";
-            this.direccionTextBox.Size = new System.Drawing.Size(100, 19);
-            this.direccionTextBox.TabIndex = 3;
-            // 
-            // dUITextBox
-            // 
-            this.dUITextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dUITextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.médicoBindingSource, "DUI", true));
-            this.dUITextBox.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dUITextBox.Location = new System.Drawing.Point(155, 148);
-            this.dUITextBox.Name = "dUITextBox";
-            this.dUITextBox.Size = new System.Drawing.Size(100, 19);
-            this.dUITextBox.TabIndex = 5;
-            // 
-            // idMedicoTextBox
-            // 
-            this.idMedicoTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.idMedicoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.médicoBindingSource, "IdMedico", true));
-            this.idMedicoTextBox.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.idMedicoTextBox.Location = new System.Drawing.Point(155, 39);
-            this.idMedicoTextBox.Name = "idMedicoTextBox";
-            this.idMedicoTextBox.Size = new System.Drawing.Size(100, 19);
-            this.idMedicoTextBox.TabIndex = 7;
-            // 
-            // nombreTextBox
-            // 
-            this.nombreTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.nombreTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.médicoBindingSource, "Nombre", true));
-            this.nombreTextBox.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nombreTextBox.Location = new System.Drawing.Point(155, 96);
-            this.nombreTextBox.Name = "nombreTextBox";
-            this.nombreTextBox.Size = new System.Drawing.Size(100, 19);
-            this.nombreTextBox.TabIndex = 9;
-            // 
-            // telefonoTextBox
-            // 
-            this.telefonoTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.telefonoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.médicoBindingSource, "Telefono", true));
-            this.telefonoTextBox.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.telefonoTextBox.Location = new System.Drawing.Point(155, 180);
-            this.telefonoTextBox.Name = "telefonoTextBox";
-            this.telefonoTextBox.Size = new System.Drawing.Size(100, 19);
-            this.telefonoTextBox.TabIndex = 11;
             // 
             // btnSeleccionMed
             // 
@@ -268,6 +151,154 @@
             this.label1.TabIndex = 11;
             this.label1.Text = "Actualizar Médico";
             // 
+            // medicosBindingSource
+            // 
+            this.medicosBindingSource.DataSource = typeof(ProyectoGetHospi.Entidades.Médico);
+            // 
+            // idMedicoDataGridViewTextBoxColumn
+            // 
+            this.idMedicoDataGridViewTextBoxColumn.DataPropertyName = "IdMedico";
+            this.idMedicoDataGridViewTextBoxColumn.HeaderText = "IdMedico";
+            this.idMedicoDataGridViewTextBoxColumn.Name = "idMedicoDataGridViewTextBoxColumn";
+            this.idMedicoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // nombreDataGridViewTextBoxColumn
+            // 
+            this.nombreDataGridViewTextBoxColumn.DataPropertyName = "Nombre";
+            this.nombreDataGridViewTextBoxColumn.HeaderText = "Nombre";
+            this.nombreDataGridViewTextBoxColumn.Name = "nombreDataGridViewTextBoxColumn";
+            this.nombreDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // direccionDataGridViewTextBoxColumn
+            // 
+            this.direccionDataGridViewTextBoxColumn.DataPropertyName = "Direccion";
+            this.direccionDataGridViewTextBoxColumn.HeaderText = "Direccion";
+            this.direccionDataGridViewTextBoxColumn.Name = "direccionDataGridViewTextBoxColumn";
+            this.direccionDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // dUIDataGridViewTextBoxColumn
+            // 
+            this.dUIDataGridViewTextBoxColumn.DataPropertyName = "DUI";
+            this.dUIDataGridViewTextBoxColumn.HeaderText = "DUI";
+            this.dUIDataGridViewTextBoxColumn.Name = "dUIDataGridViewTextBoxColumn";
+            this.dUIDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // telefonoDataGridViewTextBoxColumn
+            // 
+            this.telefonoDataGridViewTextBoxColumn.DataPropertyName = "Telefono";
+            this.telefonoDataGridViewTextBoxColumn.HeaderText = "Telefono";
+            this.telefonoDataGridViewTextBoxColumn.Name = "telefonoDataGridViewTextBoxColumn";
+            this.telefonoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // cedulaMedicoDataGridViewTextBoxColumn
+            // 
+            this.cedulaMedicoDataGridViewTextBoxColumn.DataPropertyName = "CedulaMedico";
+            this.cedulaMedicoDataGridViewTextBoxColumn.HeaderText = "CedulaMedico";
+            this.cedulaMedicoDataGridViewTextBoxColumn.Name = "cedulaMedicoDataGridViewTextBoxColumn";
+            this.cedulaMedicoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // cedulaMedicoLabel
+            // 
+            cedulaMedicoLabel.AutoSize = true;
+            cedulaMedicoLabel.Location = new System.Drawing.Point(58, 32);
+            cedulaMedicoLabel.Name = "cedulaMedicoLabel";
+            cedulaMedicoLabel.Size = new System.Drawing.Size(81, 13);
+            cedulaMedicoLabel.TabIndex = 0;
+            cedulaMedicoLabel.Text = "Cedula Medico:";
+            // 
+            // cedulaMedicoTextBox
+            // 
+            this.cedulaMedicoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.medicosBindingSource, "CedulaMedico", true));
+            this.cedulaMedicoTextBox.Location = new System.Drawing.Point(145, 29);
+            this.cedulaMedicoTextBox.Name = "cedulaMedicoTextBox";
+            this.cedulaMedicoTextBox.Size = new System.Drawing.Size(100, 20);
+            this.cedulaMedicoTextBox.TabIndex = 1;
+            // 
+            // direccionLabel
+            // 
+            direccionLabel.AutoSize = true;
+            direccionLabel.Location = new System.Drawing.Point(58, 58);
+            direccionLabel.Name = "direccionLabel";
+            direccionLabel.Size = new System.Drawing.Size(55, 13);
+            direccionLabel.TabIndex = 2;
+            direccionLabel.Text = "Direccion:";
+            // 
+            // direccionTextBox
+            // 
+            this.direccionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.medicosBindingSource, "Direccion", true));
+            this.direccionTextBox.Location = new System.Drawing.Point(145, 55);
+            this.direccionTextBox.Name = "direccionTextBox";
+            this.direccionTextBox.Size = new System.Drawing.Size(100, 20);
+            this.direccionTextBox.TabIndex = 3;
+            // 
+            // dUILabel
+            // 
+            dUILabel.AutoSize = true;
+            dUILabel.Location = new System.Drawing.Point(58, 84);
+            dUILabel.Name = "dUILabel";
+            dUILabel.Size = new System.Drawing.Size(29, 13);
+            dUILabel.TabIndex = 4;
+            dUILabel.Text = "DUI:";
+            // 
+            // dUITextBox
+            // 
+            this.dUITextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.medicosBindingSource, "DUI", true));
+            this.dUITextBox.Location = new System.Drawing.Point(145, 81);
+            this.dUITextBox.Name = "dUITextBox";
+            this.dUITextBox.Size = new System.Drawing.Size(100, 20);
+            this.dUITextBox.TabIndex = 5;
+            // 
+            // idMedicoLabel
+            // 
+            idMedicoLabel.AutoSize = true;
+            idMedicoLabel.Location = new System.Drawing.Point(58, 110);
+            idMedicoLabel.Name = "idMedicoLabel";
+            idMedicoLabel.Size = new System.Drawing.Size(57, 13);
+            idMedicoLabel.TabIndex = 6;
+            idMedicoLabel.Text = "Id Medico:";
+            // 
+            // idMedicoTextBox
+            // 
+            this.idMedicoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.medicosBindingSource, "IdMedico", true));
+            this.idMedicoTextBox.Location = new System.Drawing.Point(145, 107);
+            this.idMedicoTextBox.Name = "idMedicoTextBox";
+            this.idMedicoTextBox.Size = new System.Drawing.Size(100, 20);
+            this.idMedicoTextBox.TabIndex = 7;
+            // 
+            // nombreLabel
+            // 
+            nombreLabel.AutoSize = true;
+            nombreLabel.Location = new System.Drawing.Point(58, 136);
+            nombreLabel.Name = "nombreLabel";
+            nombreLabel.Size = new System.Drawing.Size(47, 13);
+            nombreLabel.TabIndex = 8;
+            nombreLabel.Text = "Nombre:";
+            // 
+            // nombreTextBox
+            // 
+            this.nombreTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.medicosBindingSource, "Nombre", true));
+            this.nombreTextBox.Location = new System.Drawing.Point(145, 133);
+            this.nombreTextBox.Name = "nombreTextBox";
+            this.nombreTextBox.Size = new System.Drawing.Size(100, 20);
+            this.nombreTextBox.TabIndex = 9;
+            // 
+            // telefonoLabel
+            // 
+            telefonoLabel.AutoSize = true;
+            telefonoLabel.Location = new System.Drawing.Point(58, 162);
+            telefonoLabel.Name = "telefonoLabel";
+            telefonoLabel.Size = new System.Drawing.Size(52, 13);
+            telefonoLabel.TabIndex = 10;
+            telefonoLabel.Text = "Telefono:";
+            // 
+            // telefonoTextBox
+            // 
+            this.telefonoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.medicosBindingSource, "Telefono", true));
+            this.telefonoTextBox.Location = new System.Drawing.Point(145, 159);
+            this.telefonoTextBox.Name = "telefonoTextBox";
+            this.telefonoTextBox.Size = new System.Drawing.Size(100, 20);
+            this.telefonoTextBox.TabIndex = 11;
+            // 
             // ActualizarMed
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -285,33 +316,37 @@
             this.Text = "Actualizar";
             this.Load += new System.EventHandler(this.ActualizarMed_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvMedA)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.médicoBindingSource)).EndInit();
             this.grbMedA.ResumeLayout(false);
             this.grbMedA.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.medicosBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.BindingSource médicoBindingSource;
         private System.Windows.Forms.DataGridView dgvMedA;
-        private System.Windows.Forms.DataGridViewTextBoxColumn IdMedico;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
         private System.Windows.Forms.GroupBox grbMedA;
+        private System.Windows.Forms.Button btnSeleccionMed;
+        private System.Windows.Forms.Button btnGuardarMed;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idMedicoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nombreDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn direccionDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dUIDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn telefonoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cedulaMedicoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.BindingSource medicosBindingSource;
         private System.Windows.Forms.TextBox cedulaMedicoTextBox;
         private System.Windows.Forms.TextBox direccionTextBox;
         private System.Windows.Forms.TextBox dUITextBox;
         private System.Windows.Forms.TextBox idMedicoTextBox;
         private System.Windows.Forms.TextBox nombreTextBox;
         private System.Windows.Forms.TextBox telefonoTextBox;
-        private System.Windows.Forms.Button btnSeleccionMed;
-        private System.Windows.Forms.Button btnGuardarMed;
-        private System.Windows.Forms.Label label1;
     }
 }

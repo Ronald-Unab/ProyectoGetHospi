@@ -22,31 +22,31 @@ namespace ProyectoGetHospi.Vista
 
         private void RegistrarMed_Load(object sender, EventArgs e)
         {
-            btnGuardarMed.Enabled = false;
+            btnGuardar.Enabled = false;
             grbMed.Enabled = false;
         }
 
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            médicoBindingSource.MoveLast();
-            médicoBindingSource.AddNew();
+            médicoBindingSource1.MoveLast();
+            médicoBindingSource1.AddNew();
             grbMed.Enabled = true;
-            btnGuardarMed.Enabled = true;
-            btnNuevoMed.Enabled = false;
+            btnGuardar.Enabled = true;
+            btnNuevo.Enabled = false;
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            médicoBindingSource.EndEdit();
+            médicoBindingSource1.EndEdit();
             Médico M = new Médico();
-            M = (Médico)médicoBindingSource.Current;
+            M = (Médico)médicoBindingSource1.Current;
             CMedicos cMedico = new CMedicos();
             cMedico.Registrar(M);
             this.Close();
-            btnNuevoMed.Enabled = true;
+            btnNuevo.Enabled = true;
             grbMed.Enabled = false;
-            btnGuardarMed.Enabled = false;
+            btnGuardar.Enabled = false;
             MessageBox.Show("Se ha registrado con exito al nuevo medico");
         }
     }

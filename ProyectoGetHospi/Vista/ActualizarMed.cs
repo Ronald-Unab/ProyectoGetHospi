@@ -22,7 +22,7 @@ namespace ProyectoGetHospi.Vista
         CMedicos cMedico = new CMedicos();
         public void Cargardatos()
         {
-            médicoBindingSource.DataSource =cMedico.Listado();
+            medicosBindingSource.DataSource =cMedico.Listado();
         }
 
         private void ActualizarMed_Load(object sender, EventArgs e)
@@ -46,9 +46,9 @@ namespace ProyectoGetHospi.Vista
             {
                 btnSeleccionMed.Enabled = true;
                 btnGuardarMed.Enabled = false;
-                médicoBindingSource.EndEdit();
+                medicosBindingSource.EndEdit();
                 Médico M = new Médico();
-                M = (Médico)médicoBindingSource.Current;
+                M = (Médico)medicosBindingSource.Current;
                 cMedico.Actualizar(M);
                 MessageBox.Show("Se han actualizado los datos del medico");
                 this.Close();

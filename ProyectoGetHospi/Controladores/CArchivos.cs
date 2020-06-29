@@ -19,7 +19,7 @@ namespace ProyectoGetHospi.Controladores
 
         public void Actualizar(Archivo a)
         {
-
+            marchivos.Actualizar(a);
         }
 
         public List<Archivo> Listado()
@@ -29,7 +29,7 @@ namespace ProyectoGetHospi.Controladores
 
         public void Eliminar(int id)
         {
-
+            marchivos.Eliminar(id);
         }
     }
 }

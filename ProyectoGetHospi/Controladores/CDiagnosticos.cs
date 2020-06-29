@@ -20,7 +20,7 @@ namespace ProyectoGetHospi.Controladores
 
         public void Actualizar(Diagnosticos d)
         {
-
+            mdiagnostico.Actualizar(d);
         }
 
         public List<Diagnosticos> Listado()
@@ -30,7 +30,7 @@ namespace ProyectoGetHospi.Controladores
 
         public void Eliminar(int id)
         {
-
+            mdiagnostico.Eliminar(id);
         }
     }
 }

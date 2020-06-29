@@ -20,7 +20,7 @@ namespace ProyectoGetHospi.Controladores
 
         public void Actualizar(Pacientes p)
         {
-
+            mpacientes.Actualizar(p);
         }
 
         public List<Pacientes> Listado()

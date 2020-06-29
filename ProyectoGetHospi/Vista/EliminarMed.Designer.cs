@@ -31,10 +31,16 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EliminarMed));
             this.dgvMedE = new System.Windows.Forms.DataGridView();
-            this.médicoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.button1 = new System.Windows.Forms.Button();
+            this.medicoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.idMedicoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nombreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.direccionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dUIDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.telefonoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cedulaMedicoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMedE)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.médicoBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.medicoBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvMedE
@@ -46,7 +52,14 @@
             this.dgvMedE.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(249)))), ((int)(((byte)(231)))));
             this.dgvMedE.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvMedE.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvMedE.DataSource = this.médicoBindingSource;
+            this.dgvMedE.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idMedicoDataGridViewTextBoxColumn,
+            this.nombreDataGridViewTextBoxColumn,
+            this.direccionDataGridViewTextBoxColumn,
+            this.dUIDataGridViewTextBoxColumn,
+            this.telefonoDataGridViewTextBoxColumn,
+            this.cedulaMedicoDataGridViewTextBoxColumn});
+            this.dgvMedE.DataSource = this.medicoBindingSource;
             this.dgvMedE.Location = new System.Drawing.Point(41, 48);
             this.dgvMedE.Name = "dgvMedE";
             this.dgvMedE.ReadOnly = true;
@@ -70,6 +83,52 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // medicoBindingSource
+            // 
+            this.medicoBindingSource.DataSource = typeof(ProyectoGetHospi.Entidades.Médico);
+            // 
+            // idMedicoDataGridViewTextBoxColumn
+            // 
+            this.idMedicoDataGridViewTextBoxColumn.DataPropertyName = "IdMedico";
+            this.idMedicoDataGridViewTextBoxColumn.HeaderText = "IdMedico";
+            this.idMedicoDataGridViewTextBoxColumn.Name = "idMedicoDataGridViewTextBoxColumn";
+            this.idMedicoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // nombreDataGridViewTextBoxColumn
+            // 
+            this.nombreDataGridViewTextBoxColumn.DataPropertyName = "Nombre";
+            this.nombreDataGridViewTextBoxColumn.HeaderText = "Nombre";
+            this.nombreDataGridViewTextBoxColumn.Name = "nombreDataGridViewTextBoxColumn";
+            this.nombreDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // direccionDataGridViewTextBoxColumn
+            // 
+            this.direccionDataGridViewTextBoxColumn.DataPropertyName = "Direccion";
+            this.direccionDataGridViewTextBoxColumn.HeaderText = "Direccion";
+            this.direccionDataGridViewTextBoxColumn.Name = "direccionDataGridViewTextBoxColumn";
+            this.direccionDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // dUIDataGridViewTextBoxColumn
+            // 
+            this.dUIDataGridViewTextBoxColumn.DataPropertyName = "DUI";
+            this.dUIDataGridViewTextBoxColumn.HeaderText = "DUI";
+            this.dUIDataGridViewTextBoxColumn.Name = "dUIDataGridViewTextBoxColumn";
+            this.dUIDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // telefonoDataGridViewTextBoxColumn
+            // 
+            this.telefonoDataGridViewTextBoxColumn.DataPropertyName = "Telefono";
+            this.telefonoDataGridViewTextBoxColumn.HeaderText = "Telefono";
+            this.telefonoDataGridViewTextBoxColumn.Name = "telefonoDataGridViewTextBoxColumn";
+            this.telefonoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // cedulaMedicoDataGridViewTextBoxColumn
+            // 
+            this.cedulaMedicoDataGridViewTextBoxColumn.DataPropertyName = "CedulaMedico";
+            this.cedulaMedicoDataGridViewTextBoxColumn.HeaderText = "CedulaMedico";
+            this.cedulaMedicoDataGridViewTextBoxColumn.Name = "cedulaMedicoDataGridViewTextBoxColumn";
+            this.cedulaMedicoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
             // EliminarMed
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -84,14 +143,12 @@
             this.Text = "Eliminar";
             this.Load += new System.EventHandler(this.EliminarMed_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvMedE)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.médicoBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.medicoBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.BindingSource médicoBindingSource;
         private System.Windows.Forms.DataGridView dgvMedE;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
@@ -100,5 +157,12 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idMedicoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nombreDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn direccionDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dUIDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn telefonoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cedulaMedicoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.BindingSource medicoBindingSource;
     }
 }

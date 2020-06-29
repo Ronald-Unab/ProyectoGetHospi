@@ -24,7 +24,7 @@ namespace ProyectoGetHospi
 
         public void cargardatos()
         {
-            médicoBindingSource.DataSource = cMedico.Listado();
+            medicosBindingSource.DataSource = cMedico.Listado();
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -46,9 +46,8 @@ namespace ProyectoGetHospi
 
         private void registrarNuevoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            RegistrarMed RM = new RegistrarMed();
-            RM.Show();
-
+            RegistrarMed registrarMed = new RegistrarMed();
+            registrarMed.Show();
         }
 
         private void opcionesToolStripMenuItem_Click(object sender, EventArgs e)
@@ -69,8 +68,8 @@ namespace ProyectoGetHospi
 
         private void actualizarMedicoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ActualizarMed AM = new ActualizarMed();
-            AM.Show();
+            ActualizarMed actualizarMed = new ActualizarMed();
+            actualizarMed.Show();
         }
 
         private void btnRegresar_Click(object sender, EventArgs e)
