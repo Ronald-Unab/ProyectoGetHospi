@@ -199,7 +199,7 @@
             // 
             // médicoBindingSource
             // 
-            this.médicoBindingSource.DataSource = typeof(ProyectoGetHospi.Entidades.Médico);
+            //this.médicoBindingSource.DataSource = typeof(ProyectoGetHospi.Entidades.Médico);
             // 
             // idMedicoDataGridViewTextBoxColumn
             // 

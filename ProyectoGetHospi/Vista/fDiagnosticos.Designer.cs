@@ -41,6 +41,7 @@
             this.recargarDatosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.diagnosticosDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.diagnosticosBindingSource)).BeginInit();
             this.menuStrip1.SuspendLayout();
@@ -56,7 +57,7 @@
             this.btnRegresar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegresar.Image = ((System.Drawing.Image)(resources.GetObject("btnRegresar.Image")));
             this.btnRegresar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRegresar.Location = new System.Drawing.Point(507, 317);
+            this.btnRegresar.Location = new System.Drawing.Point(622, 351);
             this.btnRegresar.Name = "btnRegresar";
             this.btnRegresar.Size = new System.Drawing.Size(139, 29);
             this.btnRegresar.TabIndex = 3;
@@ -74,9 +75,9 @@
             this.diagnosticosDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.diagnosticosDataGridView.DataSource = this.diagnosticosBindingSource;
             this.diagnosticosDataGridView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(249)))), ((int)(((byte)(231)))));
-            this.diagnosticosDataGridView.Location = new System.Drawing.Point(231, 49);
+            this.diagnosticosDataGridView.Location = new System.Drawing.Point(207, 46);
             this.diagnosticosDataGridView.Name = "diagnosticosDataGridView";
-            this.diagnosticosDataGridView.Size = new System.Drawing.Size(466, 251);
+            this.diagnosticosDataGridView.Size = new System.Drawing.Size(554, 299);
             this.diagnosticosDataGridView.TabIndex = 4;
             // 
             // menuStrip1
@@ -87,7 +88,7 @@
             this.opcionesToolStripMenuItem,
             this.recargarDatosToolStripMenuItem});
             this.menuStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.VerticalStackWithOverflow;
-            this.menuStrip1.Location = new System.Drawing.Point(24, 175);
+            this.menuStrip1.Location = new System.Drawing.Point(14, 187);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(158, 54);
             this.menuStrip1.TabIndex = 5;
@@ -107,13 +108,17 @@
             // 
             // nuevoDiagnosticoToolStripMenuItem
             // 
+            this.nuevoDiagnosticoToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(208)))), ((int)(((byte)(63)))));
+            this.nuevoDiagnosticoToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("nuevoDiagnosticoToolStripMenuItem.Image")));
             this.nuevoDiagnosticoToolStripMenuItem.Name = "nuevoDiagnosticoToolStripMenuItem";
             this.nuevoDiagnosticoToolStripMenuItem.Size = new System.Drawing.Size(241, 24);
-            this.nuevoDiagnosticoToolStripMenuItem.Text = "Nuevo Diagnostico";
+            this.nuevoDiagnosticoToolStripMenuItem.Text = "Registrar Diagnostico";
             this.nuevoDiagnosticoToolStripMenuItem.Click += new System.EventHandler(this.nuevoDiagnosticoToolStripMenuItem_Click);
             // 
             // actualizarDiagnosticoToolStripMenuItem
             // 
+            this.actualizarDiagnosticoToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(208)))), ((int)(((byte)(63)))));
+            this.actualizarDiagnosticoToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("actualizarDiagnosticoToolStripMenuItem.Image")));
             this.actualizarDiagnosticoToolStripMenuItem.Name = "actualizarDiagnosticoToolStripMenuItem";
             this.actualizarDiagnosticoToolStripMenuItem.Size = new System.Drawing.Size(241, 24);
             this.actualizarDiagnosticoToolStripMenuItem.Text = "Actualizar Diagnostico";
@@ -121,6 +126,8 @@
             // 
             // eliminarDiagnosticoToolStripMenuItem
             // 
+            this.eliminarDiagnosticoToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(208)))), ((int)(((byte)(63)))));
+            this.eliminarDiagnosticoToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("eliminarDiagnosticoToolStripMenuItem.Image")));
             this.eliminarDiagnosticoToolStripMenuItem.Name = "eliminarDiagnosticoToolStripMenuItem";
             this.eliminarDiagnosticoToolStripMenuItem.Size = new System.Drawing.Size(241, 24);
             this.eliminarDiagnosticoToolStripMenuItem.Text = "Eliminar Diagnostico";
@@ -137,32 +144,44 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(208)))), ((int)(((byte)(63)))));
+            this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.menuStrip1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(199, 359);
+            this.panel1.Size = new System.Drawing.Size(181, 400);
             this.panel1.TabIndex = 6;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(33, 26);
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(24, 49);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(133, 133);
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(31, 24);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(118, 22);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "Diagnostico";
             // 
             // fDiagnosticos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(231)))), ((int)(((byte)(159)))));
-            this.ClientSize = new System.Drawing.Size(716, 359);
+            this.ClientSize = new System.Drawing.Size(783, 400);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.diagnosticosDataGridView);
             this.Controls.Add(this.btnRegresar);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "fDiagnosticos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -199,5 +218,6 @@
         private System.Windows.Forms.ToolStripMenuItem recargarDatosToolStripMenuItem;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label1;
     }
 }

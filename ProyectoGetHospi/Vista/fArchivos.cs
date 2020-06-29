@@ -18,10 +18,6 @@ namespace ProyectoGetHospi.Vista
             InitializeComponent();
         }
         MArchivos mArchivos = new MArchivos();
-        private void btnRegresar_Click(object sender, EventArgs e)
-        {
-            
-        }
         public void cargardatos() 
         {
             archivoBindingSource.DataSource = mArchivos.Listado();
@@ -81,5 +77,14 @@ namespace ProyectoGetHospi.Vista
         {
 
         }
+
+        private void btnRegresar_Click(object sender, EventArgs e)
+        {
+            fMenu M = new fMenu();
+            M.Show();
+            Hide();
+        }
+
+   
     }
 }
